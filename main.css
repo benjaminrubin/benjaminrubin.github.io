@@ -155,7 +155,7 @@ body {
 
 /* iPad vertical is 768px */
 
-@media (min-width: 768px) {
+@media (min-width: 668px) {
 
 	#profilePic {
 		height: 200px;
