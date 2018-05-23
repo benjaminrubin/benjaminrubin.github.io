@@ -18,10 +18,8 @@ body {
 #top {
 	background-color: rgba(255,255,255,0.9);
 	border-radius: 30px;
-	padding: 25px 10px;
-	max-width: 700px;
-	margin: auto auto;
-	margin-top: 20px;
+	margin: 0px auto;
+	margin-top: 70px;
 
     display: grid;
     grid-template-columns: auto;
@@ -39,7 +37,7 @@ body {
 
 #tagline {font-size: 20px;}
 
-#location {font-size: 20px;}
+#location {font-size: 18px;}
 
 .section {
   display: flex;
@@ -50,17 +48,16 @@ body {
 
 #bottom {
 	max-width: 700px;
-	margin: auto auto;
+	margin: 0px auto;
+	margin-top: 0px;
 }
 
-.navigation {
-	margin-top: 30px;
+#navigation {
 	display: grid;
     grid-template-columns: auto auto;
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-	
+	margin: auto auto;
+	margin-top: 30px;
 }
 
 .button {
@@ -118,6 +115,33 @@ body {
 	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
+#social {
+	margin: auto auto;
+	text-align: center;
+	max-width: 200px;
+	margin-top: 30px;
+}
+
+.socialIcon {
+	fill: gray;
+	transition: all .25s ease;
+	margin: 0px 8px;
+}
+
+.socialIcon:hover {
+	cursor: pointer;
+}
+
+#instagram:hover {
+	fill: purple;
+}
+#linkedin:hover {
+	fill: #1a75ff;
+}
+#dribbble:hover {
+	fill: #e600ac;
+}
+
 
 /* iPad vertical is 768px */
 @media (min-width: 768px) {
@@ -126,10 +150,8 @@ body {
 #top {
 	background-color: rgba(255,255,255,0.9);
 	border-radius: 30px;
-	padding: 25px 10px;
-	max-width: 700px;
-	margin: auto auto;
-	margin-top: 20px;
+	/*padding: 25px 10px;*/
+	max-width: 650px;
 
     display: grid;
     grid-template-columns: auto auto;
@@ -138,11 +160,15 @@ body {
     /*justify-items: center;*/ /*horizontally center items in their grid cells*/
 }
 
-#profileInfo {
-	line-height: 200%;
-	margin-top: 35px;
+#navigation {
+    margin-left: 0px;
+    max-width: 100px;
+    margin-top: 24px;
 }
 
+#social {
+	margin-top: 70px;
+}
 
 }
 /* Small desktop starts at 992px*/ 
