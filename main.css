@@ -1,90 +1,96 @@
 body {
-	font-family: Futura !important;
-	color: #333333 !important;
+    font-family: Futura !important;
+    color: #333333 !important;
 
-	text-rendering: optimizeLegibility;
- 	 -webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
- 	 /*background-color: black !important;*/
- 	 /*background-image: url('http://i.imgur.com/TnNwdvV.png');*/
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background-color: black !important;*/
+    /*background-image: url('http://i.imgur.com/TnNwdvV.png');*/
 }
 
 #background {
-	/*background-color: black;*/
-/*    height: 100%;
+    /*background-color: black;*/
+    /*    height: 100%;
     width: 100%;*/
 }
 
 #top {
-	background-color: rgba(255,255,255,0.9);
-	border-radius: 30px;
-	margin: 0px auto;
-	margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    margin: 0px auto;
+    margin-top: 70px;
 
     display: grid;
     grid-template-columns: auto;
     text-align: center;
     /*align-items: center;*/
-    /*justify-items: center;*/ /*horizontally center items in their grid cells*/
+    /*justify-items: center;*/
+    /*horizontally center items in their grid cells*/
 }
 
 #profileInfo {
-	line-height: 200%;
-	margin-top: 20px;
+    line-height: 200%;
+    margin-top: 20px;
 }
 
-#name {font-size: 30px;}
+#name {
+    font-size: 23px;
+}
 
-#tagline {font-size: 20px;}
+#tagline {
+    font-size: 18px;
+}
 
-#location {font-size: 18px;}
+#location {
+    font-size: 16px;
+}
 
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*font-size: 3em;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*font-size: 3em;*/
 }
 
 #bottom {
-	max-width: 700px;
-	margin: 0px auto;
-	margin-top: 0px;
+    max-width: 700px;
+    margin: 0px auto;
+    margin-top: 0px;
 }
 
 #navigation {
-	display: grid;
+    display: grid;
     grid-template-columns: auto auto;
     max-width: 300px;
-	margin: auto auto;
-	margin-top: 30px;
+    margin: auto auto;
+    margin-top: 30px;
 }
 
 .button {
-	text-align: center;
+    text-align: center;
 }
 
 .myButton {
-	padding: 8px 15px !important;
-	position: relative;
-	background-color: white !important;
-	color: #333333 !important;
-	border: black !important;
+    padding: 8px 15px !important;
+    position: relative;
+    background-color: white !important;
+    color: #333333 !important;
+    border: black !important;
 
-	margin: 0px 10px;
+    margin: 0px 10px;
 
-	transition: all .15s ease !important;
+    transition: all .15s ease !important;
 
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.30);
-
 }
 
 .myButton:hover {
-	/*background-color:  black !important;*/
-	/*color: white !important;*/
-	top: -1px;
+    /*background-color:  black !important;*/
+    /*color: white !important;*/
+    top: -1px;
 
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
@@ -92,8 +98,8 @@ body {
 }
 
 #profilePic {
-    height: 200px;
-    width: 200px;
+    height: 140px;
+    width: 140px;
     object-fit: cover;
     border-radius: 30px;
 
@@ -105,85 +111,102 @@ body {
 }
 
 .modal.profilePicModal {
-	margin: auto auto;
+    margin: auto auto;
 }
 
 
 #profilePic:hover {
-	cursor: pointer;
+    cursor: pointer;
 
-	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #social {
-	margin: auto auto;
-	text-align: center;
-	max-width: 200px;
-	margin-top: 30px;
+    margin: auto auto;
+    text-align: center;
+    max-width: 200px;
+    margin-top: 30px;
 }
 
 .socialIcon {
-	fill: gray;
-	transition: all .25s ease;
-	margin: 0px 8px;
+    fill: gray;
+    transition: all .25s ease;
+    margin: 0px 8px;
 }
 
 .socialIcon:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #instagram:hover {
-	fill: purple;
+    fill: purple;
 }
+
 #linkedin:hover {
-	fill: #1a75ff;
+    fill: #1a75ff;
 }
+
 #dribbble:hover {
-	fill: #e600ac;
+    fill: #e600ac;
 }
+
+
 
 
 /* iPad vertical is 768px */
+
 @media (min-width: 768px) {
-	
 
-#top {
-	background-color: rgba(255,255,255,0.9);
-	border-radius: 30px;
-	/*padding: 25px 10px;*/
-	max-width: 650px;
 
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: left;
-    /*align-items: center;*/
-    /*justify-items: center;*/ /*horizontally center items in their grid cells*/
+    #top {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 30px;
+        /*padding: 25px 10px;*/
+        max-width: 650px;
+
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        /*align-items: center;*/
+        /*justify-items: center;*/
+        /*horizontally center items in their grid cells*/
+    }
+
+    #navigation {
+        margin-left: 0px;
+        max-width: 100px;
+        margin-top: 24px;
+    }
+
+    #social {
+        margin-top: 70px;
+    }
+
+
+
+    #name {
+        font-size: 30px;
+    }
+
+    #tagline {
+        font-size: 20px;
+    }
+
+    #location {
+        font-size: 18px;
+    }
 }
 
-#navigation {
-    margin-left: 0px;
-    max-width: 100px;
-    margin-top: 24px;
-}
-
-#social {
-	margin-top: 70px;
-}
-
-}
-/* Small desktop starts at 992px*/ 
-@media (min-width: 992px) {
 
 
-}
+/* Small desktop starts at 992px*/
+
+@media (min-width: 992px) {}
+
+
 
 /* Larger desktop starts around 1200px */
-@media (min-width: 1200px) {
 
+@media (min-width: 1200px) {}
 
-}
-
-@media (min-width: 1400px) {
-
-
-}
+@media (min-width: 1400px) {}
