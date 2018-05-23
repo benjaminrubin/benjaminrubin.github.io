@@ -8,11 +8,13 @@ body {
 	/*font-family: futura-pt, sans-serif !important;*/
 	/*font-family: 'Roboto', sans-serif !important;*/
 	font-family: Futura !important;
+	color: #333333 !important;
+
 	text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*background-color: black !important;*/
-  background-image: url('http://i.imgur.com/TnNwdvV.png');
+ 	 -webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+ 	 /*background-color: black !important;*/
+ 	 /*background-image: url('http://i.imgur.com/TnNwdvV.png');*/
 }
 
 #background {
@@ -23,20 +25,139 @@ body {
 
 #top {
 	background-color: rgba(255,255,255,0.9);
-	border-radius: 20px;
+	border-radius: 30px;
 	padding: 25px 40px;
-	max-width: 800px;
+	max-width: 700px;
 	margin: auto auto;
+	margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    /*align-items: center;*/
+    /*justify-items: center;*/ /*horizontally center items in their grid cells*/
+
+ /*   -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.30);*/
+}
+
+#profileInfo {
+	line-height: 200%;
 	margin-top: 50px;
+}
+
+#name {font-size: 30px;}
+
+#tagline {font-size: 20px;}
+
+#location {font-size: 20px;}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*font-size: 3em;*/
+}
+
+#bottom {
+	max-width: 700px;
+	margin: auto auto;
+}
+
+.navigation {
+	margin-top: 30px;
+	display: grid;
+    grid-template-columns: auto;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+.button {
+	text-align: center;
+}
+
+.myButton {
+	padding: 8px 15px !important;
+	position: relative;
+	background-color: white !important;
+	color: #333333 !important;
+	border: black !important;
+
+	margin: 0px 10px;
+
+	transition: all .15s ease !important;
+
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.30);
+
+}
+
+.myButton:hover {
+	/*background-color:  black !important;*/
+	/*color: white !important;*/
+	top: -1px;
+
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.30);
 }
 
 #profilePic {
     height: 200px;
     width: 200px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 30px;
 
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.30);
+
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.modal.profilePicModal {
+	margin: auto auto;
+}
+
+
+#profilePic:hover {
+	cursor: pointer;
+
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+/* iPad vertical is 768px */
+@media (min-width: 300px) {
+	
+.navigation {
+	margin-top: 30px;
+	display: grid;
+    grid-template-columns: auto auto;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+}
+/* Small desktop starts at 992px*/ 
+@media (min-width: 992px) {
+
+
+}
+
+/* Larger desktop starts around 1200px */
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 1400px) {
+
+
 }
