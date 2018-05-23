@@ -157,6 +157,10 @@ body {
 
 @media (min-width: 768px) {
 
+	#profilePic {
+		height: 200px;
+		width: 200px;
+	}
 
     #top {
         background-color: rgba(255, 255, 255, 0.9);
