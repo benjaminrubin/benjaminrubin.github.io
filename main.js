@@ -50,7 +50,13 @@ for (var i = 0; i < socialIcons.length; i++) {
 
 
 function divLoad() {
-    $("#details").fadeIn(900);
+    // $("#details").fadeIn(600 , function(){
+    // 	    $("#social").fadeIn(600);
+    // });
+
+    $("#details").fadeIn(600);
+    $("#social").fadeIn(1600);
+
 }
 
 
