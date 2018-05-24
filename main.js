@@ -3,25 +3,30 @@ var fadeSpeed = 110;
 
 function navigate(button) {
 
+	$("#social").fadeOut(fadeSpeed);
+
     wait(100);
 
     if (button.id == "back") {
         // document.getElementById("home").style.display = "none";
         $("#aboutMe").fadeOut(fadeSpeed, function() {
             $("#header").fadeOut(fadeSpeed, function() {
-                $("#home").fadeIn(fadeSpeed);
+                $("#home").fadeIn(fadeSpeed, function() {
+                	$("#social").fadeIn(600);
+                });
             });
         });
     } else if (button.id == "about") {
         // document.getElementById("home").style.display = "none";
         $("#home").fadeOut(fadeSpeed, function() {
             $("#aboutMe").fadeIn(fadeSpeed);
-            $("#header").fadeIn(fadeSpeed);
+            $("#header").fadeIn(fadeSpeed, function() {
+                	$("#social").fadeIn(600);
+                });
         });
     } else if (button.id == "work") {
 
     }
-
 
 }
 
@@ -37,7 +42,7 @@ for (var i = 0; i < socialIcons.length; i++) {
             window.open("https://www.instagram.com/benny__ruby/");
         }
         else if (this.id == "dribbble") {
-        	
+
             // window.open("https://www.instagram.com/benny__ruby/");
         }
     }

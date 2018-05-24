@@ -5,6 +5,12 @@
 }
 
 
+#bio {
+	margin: 20px;
+
+}
+
+
 /* iPad vertical is 768px */
 
 @media (min-width: 668px) {

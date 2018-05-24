@@ -2,9 +2,12 @@ body {
     font-family: Futura !important;
     color: #333333 !important;
 
+	padding-bottom: 50px !important;
+
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 .container-fluid {
@@ -136,7 +139,7 @@ body {
     max-width: 200px;
     margin-top: 30px;
 
-    transition: all .4s ease !important;
+    /*transition: all .4s ease !important;*/
 }
 
 .socialIcon {
