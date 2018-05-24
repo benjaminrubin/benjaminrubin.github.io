@@ -11,6 +11,10 @@
 </head>
 
 <body onload="divLoad();">
+    <div id="header">
+        <span id="tagline" style="text-align:center;">BENJAMIN FLOYD RUBIN</span>
+        <br/>
+    </div>
     <div class="container-fluid">
         <!-- home -->
         <div id="home">
@@ -18,13 +22,13 @@
                 <img src="images/profilepic.JPG" alt="profile picture" id="profilePic">
             </div>
             <div id="profileInfo">
-            	<div id="details">
-            		<span id="name">Benjamin Floyd Rubin</span>
-                <br/>
-                <span id="tagline">Product, UI/UX & Graphic Designer</span>
-                <br/>
-                <span id="location">📍Los Angeles, California</span>
-            	</div>
+                <div id="details">
+                    <span id="name">Benjamin Floyd Rubin</span>
+                    <br/>
+                    <span id="tagline">Product, UI/UX & Graphic Designer</span>
+                    <br/>
+                    <span id="location">📍Los Angeles, California</span>
+                </div>
                 <div id="profileButtons">
                     <div class="button">
                         <label class="btn btn-primary myButton" id="about" onmouseup="navigate(this);">ABOUT ME</label>
@@ -38,12 +42,15 @@
         <!-- end of home -->
         <!-- about me -->
         <div id="aboutMe">
-        		Hi my name is Benjamin Rubin!
+            <div class="button backButton ">
+                <label class="btn btn-primary myButton" id="back" onmouseup="navigate(this);">BACK HOME</label>
+            </div>
+            <span id="tagline" style="text-align:center;">BENJAMIN FLOYD RUBIN</span>
+            <br/> Hi my name is Benjamin Rubin!
         </div>
         <!-- end of about me -->
-
         <div id="myWork">
-        	whoa!
+            whoa!
         </div>
     </div>
     <div id="social">

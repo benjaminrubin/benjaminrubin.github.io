@@ -11,6 +11,12 @@ body {
 	/*display:none;*/
 }
 
+#header {
+	display: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
 
 #home {
     margin: 0px auto;
@@ -62,9 +68,7 @@ body {
 
 }
 
-
-
-.button {
+#home.button {
     text-align: center;
 
     transition: all .3s ease !important;
@@ -132,7 +136,7 @@ body {
     max-width: 200px;
     margin-top: 30px;
 
-    transition: all .9s ease !important;
+    transition: all .4s ease !important;
 }
 
 .socialIcon {
@@ -155,6 +159,10 @@ body {
 
 #dribbble:hover {
     fill: #e600ac;
+}
+
+.backButton {
+	text-align: center;
 }
 
 
@@ -206,6 +214,11 @@ body {
     	margin: 0px 0px;
     	margin-right: 30px;
     }
+
+	.backButton {
+		text-align: left;
+	}
+
 }
 
 
