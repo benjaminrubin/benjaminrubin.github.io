@@ -1,0 +1,30 @@
+#myWork {
+	display: none;
+	margin: 0px auto;
+    margin-top: 30px;
+}
+
+
+/* iPad vertical is 768px */
+
+@media (min-width: 668px) {
+    #myWork {
+		margin-top: 70px;
+    }
+}
+
+
+
+
+/* Small desktop starts at 992px*/
+
+@media (min-width: 992px) {}
+
+
+
+
+/* Larger desktop starts around 1200px */
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
