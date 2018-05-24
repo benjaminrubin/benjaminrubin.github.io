@@ -1,4 +1,5 @@
 var fadeSpeed = 110;
+var fadeSocial = 500;
 
 
 function navigate(button) {
@@ -8,26 +9,28 @@ function navigate(button) {
     wait(100);
 
     if (button.id == "back") {
-        // document.getElementById("home").style.display = "none";
         $("#aboutMe").fadeOut(fadeSpeed, function() {
             $("#header").fadeOut(fadeSpeed, function() {
                 $("#home").fadeIn(fadeSpeed, function() {
-                	$("#social").fadeIn(600);
+                	$("#social").fadeIn(fadeSocial);
                 });
             });
         });
     } else if (button.id == "about") {
-        // document.getElementById("home").style.display = "none";
         $("#home").fadeOut(fadeSpeed, function() {
             $("#aboutMe").fadeIn(fadeSpeed);
             $("#header").fadeIn(fadeSpeed, function() {
-                	$("#social").fadeIn(600);
+                	$("#social").fadeIn(fadeSocial);
                 });
         });
     } else if (button.id == "work") {
-
+        $("#home").fadeOut(fadeSpeed, function() {
+            $("#work").fadeIn(fadeSpeed);
+            $("#header").fadeIn(fadeSpeed, function() {
+                	$("#social").fadeIn(fadeSocial);
+                });
+        });
     }
-
 }
 
 
