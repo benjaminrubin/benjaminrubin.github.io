@@ -1,23 +1,29 @@
 
 function navigate (button) {
 
-	wait(200);
+	wait(100);
 
 	if (button.id == "about") {
-		document.getElementById("home").style.display = "none";
-		document.getElementById("aboutMe").style.display = "block";
+		// document.getElementById("home").style.display = "none";
+		$("#home").fadeOut(200, function() {
+			$("#aboutMe").fadeIn(200);
+		});
+		// wait(500);
+		// document.getElementById("aboutMe").style.display = "block";
 
 
 	}
 	else if (button.id == "work") {
-		
-
 
 	}
 
 
 }
 
+
+function divLoad() {
+	$("#details").fadeIn(900);
+}
 
 
 
