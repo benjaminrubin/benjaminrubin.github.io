@@ -90,7 +90,7 @@ body {
 
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+    box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.30);
 }
 
 .myButton:hover {
@@ -190,6 +190,13 @@ body {
 	#profileInfo {
 	    margin-left: 40px;
 	}
+
+	.myButton {
+
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+}
 
     #profileButtons {
         margin-left: 0px;
