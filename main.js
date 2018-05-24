@@ -1,35 +1,56 @@
 var fadeSpeed = 110;
 var fadeSocial = 500;
+var currentPage = "home"
 
 
 function navigate(button) {
 
-	$("#social").fadeOut(fadeSpeed);
+    $("#social").fadeOut(fadeSpeed);
 
     wait(100);
 
-    if (button.id == "back") {
-        $("#aboutMe").fadeOut(fadeSpeed, function() {
-            $("#header").fadeOut(fadeSpeed, function() {
-                $("#home").fadeIn(fadeSpeed, function() {
-                	$("#social").fadeIn(fadeSocial);
+    if (button.id == "backButton") {
+
+        if (currentPage == "about") {
+            $("#aboutMe").fadeOut(fadeSpeed, function() {
+                $("#header").fadeOut(fadeSpeed, function() {
+                    $("#home").fadeIn(fadeSpeed, function() {
+                        $("#social").fadeIn(fadeSocial);
+                    });
                 });
             });
-        });
-    } else if (button.id == "about") {
+        }
+        else if (currentPage == "work") {
+            $("#myWork").fadeOut(fadeSpeed, function() {
+                $("#header").fadeOut(fadeSpeed, function() {
+                    $("#home").fadeIn(fadeSpeed, function() {
+                        $("#social").fadeIn(fadeSocial);
+                    });
+                });
+            });
+        }
+    }
+
+    // navigating to about
+    else if (button.id == "aboutButton") {
         $("#home").fadeOut(fadeSpeed, function() {
             $("#aboutMe").fadeIn(fadeSpeed);
             $("#header").fadeIn(fadeSpeed, function() {
-                	$("#social").fadeIn(fadeSocial);
-                });
+                $("#social").fadeIn(fadeSocial);
+            });
         });
-    } else if (button.id == "work") {
+        currentPage = "about";
+    }
+
+    // navigating to work
+    else if (button.id == "workButton") {
         $("#home").fadeOut(fadeSpeed, function() {
-            $("#work").fadeIn(fadeSpeed);
+            $("#myWork").fadeIn(fadeSpeed);
             $("#header").fadeIn(fadeSpeed, function() {
-                	$("#social").fadeIn(fadeSocial);
-                });
+                $("#social").fadeIn(fadeSocial);
+            });
         });
+        currentPage = "work";
     }
 }
 
@@ -40,11 +61,9 @@ for (var i = 0; i < socialIcons.length; i++) {
     socialIcons[i].onclick = function() {
         if (this.id == "linkedin") {
             window.open("https://www.linkedin.com/in/benjaminfloydrubin/");
-        }
-        else if (this.id == "instagram") {
+        } else if (this.id == "instagram") {
             window.open("https://www.instagram.com/benny__ruby/");
-        }
-        else if (this.id == "dribbble") {
+        } else if (this.id == "dribbble") {
 
             // window.open("https://www.instagram.com/benny__ruby/");
         }
