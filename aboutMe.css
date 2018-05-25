@@ -1,22 +1,19 @@
 #aboutMe {
 	display: none;
     margin: 0px auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
-
 
 #bio {
-	margin: 20px;
-
+	margin: 0px 20px;
+	line-height: 200%;
 }
-
 
 /* iPad vertical is 768px */
 
 @media (min-width: 668px) {
     #aboutMe {
-		margin-top: 20px;
-        max-width: 500px;
+		/*margin-top: 30px;*/
     }
 }
 

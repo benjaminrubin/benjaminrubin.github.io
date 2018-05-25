@@ -2,16 +2,17 @@
 	display: none;
 	margin: 0px auto;
     margin-top: 30px;
+    max-width: 500px;
 }
 
 
 /* iPad vertical is 768px */
 
 @media (min-width: 668px) {
-    #myWork {
+/*    #myWork {
 		margin-top: 20px;
 		max-width: 500px;
-    }
+    }*/
 }
 
 

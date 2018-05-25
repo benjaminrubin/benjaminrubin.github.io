@@ -9,7 +9,7 @@ function navigate(button) {
 
     wait(100);
 
-    if (button.id == "backButton") {
+    if (button.id == "homeButton") {
 
         if (currentPage == "about") {
             $("#aboutMe").fadeOut(fadeSpeed, function() {
