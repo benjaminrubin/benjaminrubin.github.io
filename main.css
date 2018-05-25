@@ -2,27 +2,26 @@ body {
     font-family: Futura !important;
     color: #333333 !important;
 
-	padding-bottom: 50px !important;
+    padding-bottom: 50px !important;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 }
 
 .container-fluid {
-	/*display:none;*/
+    /*display:none;*/
 }
 
 #header {
-	display: none;
-	text-align: center;
-	margin-top: 20px;
+    display: none;
+    text-align: center;
+    margin-top: 20px;
 }
 
 #title {
-	display: inline;
-	text-align: center;
+    display: inline;
+    text-align: center;
 }
 
 #home {
@@ -37,11 +36,10 @@ body {
 #profileInfo {
     line-height: 200%;
     margin-top: 20px;
-
 }
 
 #details {
-	display: none;
+    display: none;
 }
 
 #name {
@@ -57,7 +55,7 @@ body {
 }
 
 #profilePicHolder {
-	margin: auto auto;
+    margin: auto auto;
 }
 
 #bottom {
@@ -72,7 +70,6 @@ body {
     max-width: 300px;
     margin: auto auto;
     margin-top: 20px;
-
 }
 
 #home.button {
@@ -81,15 +78,19 @@ body {
     transition: all .3s ease !important;
 }
 
+
+
+/*dealing with the buttons*/
+
 .myButton {
     padding: 8px 15px !important;
     position: relative;
     background-color: white !important;
     color: #333333 !important;
     border: black !important;
-	top: 0px;
+    top: 0px;
     margin: 0px 10px;
-	
+
     transition: all .1s ease !important;
 
     -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -98,14 +99,6 @@ body {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
 }
 
-/*.myButton:hover {
-    transform: translateY(-2px);
-
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.30);
-}*/
-
 .myButton:hover {
     transform: translateY(2px);
 
@@ -113,6 +106,17 @@ body {
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
 }
+
+/*.myButton:active {
+    transform: translateY(0px);
+
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+}*/
+
+
+/*end of buttons*/
 
 #profilePic {
     height: 140px;
@@ -131,6 +135,7 @@ body {
     margin: auto auto;
 }
 
+
 /*
 #profilePic:hover {
     cursor: pointer;
@@ -139,7 +144,7 @@ body {
 }*/
 
 #social {
-	display: none;
+    display: none;
 
     margin: auto auto;
     text-align: center;
@@ -172,8 +177,9 @@ body {
 }
 
 .backButton {
-	text-align: center;
+    text-align: center;
 }
+
 
 
 
@@ -181,10 +187,10 @@ body {
 
 @media (min-width: 668px) {
 
-	#profilePic {
-		height: 200px;
-		width: 200px;
-	}
+    #profilePic {
+        height: 200px;
+        width: 200px;
+    }
 
     #home {
         margin-top: 70px;
@@ -193,10 +199,10 @@ body {
         grid-template-columns: 200px auto;
         text-align: left;
     }
-	
-	#profileInfo {
-	    margin-left: 40px;
-	}
+
+    #profileInfo {
+        margin-left: 40px;
+    }
 
     #profileButtons {
         margin-left: 0px;
@@ -221,22 +227,48 @@ body {
     }
 
     .myButton {
-    	margin: 0px 0px;
-    	margin-right: 30px;
+        margin: 0px 0px;
+        margin-right: 30px;
     }
 
-	.backButton {
-		text-align: left;
-		margin-left: 20px;
-	}
+    .backButton {
+        text-align: left;
+        margin-left: 20px;
+    }
 
+/*dealing with the buttons*/
+
+    .myButton {
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
+    }
+
+    .myButton:hover {
+        transform: translateY(-2px);
+
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.30);
+    }
+
+    .myButton:active {
+        transform: translateY(2px);
+
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+    }
+    /*end of buttons*/
 }
+
 
 
 
 /* Small desktop starts at 992px*/
 
 @media (min-width: 992px) {}
+
 
 
 
