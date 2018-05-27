@@ -78,7 +78,15 @@ function divLoad() {
 
     $("#details").fadeIn(600);
     $("#social").fadeIn(1600);
+}
 
+window.onscroll = function() {
+    var nav = document.getElementById('header');
+    if ( window.pageYOffset > 30 ) {
+        nav.classList.add("headerShadow");
+    } else {
+        nav.classList.remove("headerShadow");
+    }
 }
 
 
