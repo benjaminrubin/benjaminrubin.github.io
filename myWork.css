@@ -1,32 +1,50 @@
-#myWork {
+#myWorkBox {
     display: none;
     margin: 0px auto;
     margin-top: 30px;
     max-width: 1200px;
 }
 
+#myWorkButtonBox {
+	display: none;
+	text-align: center;
+}
+
+#myWorkButton {
+	text-align: center;
+    /*font-size: 30px;*/
+}
+
+#workButtons {
+	/*display: none;*/
+}
 #workButtons {
 	text-align: center;
 }
 
 #workBox {
+	display: none;
     padding: 20px;
 }
 
 #productBox {
+	display: none;
+}
+
+#productBoxTabs {
 	padding: 20px;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
 	grid-gap: 30px;
 	justify-content: center;
 }
 
 .productTab {
 	font-size: 1rem;
-	width: 120px;
-	height: 120px;
+	width: 300px;
+	height: 300px;
 	text-align: center;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     cursor: pointer;
 	transition: all .1s ease !important;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
@@ -56,13 +74,18 @@
 }
 
 .productTabImage {
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 90%;
     padding: 5px;
 }
 
 #graphicBox {
+	display: none;
 	text-align: center;
+}
+
+.workButton {
+	margin: 10px 0px;
 }
 
 

@@ -5,7 +5,10 @@ var currentPage = "home"
 
 function navigate(button) {
 
-    $("#social").fadeOut(fadeSpeed);
+    // if (button.id != "productButton" && button.id != "graphicButton") {
+        $("#social").fadeOut(fadeSpeed);
+    // }
+
 
     wait(100);
 
@@ -15,20 +18,20 @@ function navigate(button) {
             $("#aboutMe").fadeOut(fadeSpeed, function() {
                 $("#header").fadeOut(fadeSpeed + 100, function() {
                     $("#home").fadeIn(fadeSpeed, function() {
-                        $("#social").stop(true,true).fadeIn(fadeSocial);
+                        $("#social").stop(true, true).fadeIn(fadeSocial);
                     });
                 });
             });
-        }
-        else if (currentPage == "work") {
-            $("#myWork").fadeOut(fadeSpeed, function() {
+        } else if (currentPage == "work") {
+            $("#myWorkBox").fadeOut(fadeSpeed, function() {
                 $("#header").fadeOut(fadeSpeed + 100, function() {
                     $("#home").fadeIn(fadeSpeed, function() {
-                        $("#social").stop(true,true).fadeIn(fadeSocial);
+                        $("#social").stop(true, true).fadeIn(fadeSocial);
                     });
                 });
             });
         }
+        currentPage = "home";
     }
 
     // navigating to about
@@ -45,13 +48,31 @@ function navigate(button) {
     // navigating to work
     else if (button.id == "workButton") {
         $("#home").fadeOut(fadeSpeed, function() {
-            $("#myWork").fadeIn(fadeSpeed);
-            $("#header").fadeIn(fadeSpeed, function() {
-                $("#social").fadeIn(fadeSocial);
+            $("#myWorkBox").fadeIn(fadeSpeed, function() {
+                $("#workButtons").fadeIn(fadeSpeed, function() {
+                    $("#header").fadeIn(fadeSpeed, function() {
+                        $("#social").fadeIn(fadeSocial);
+                    });
+                });
             });
         });
         currentPage = "work";
+    } else if (button.id == "productButton") {
+    	$("#myWorkBox").fadeOut(fadeSpeed, function() {
+    		  $("#productBox").fadeIn(fadeSpeed, function(){
+    		  	$("#myWorkButtonBox").fadeIn(fadeSpeed , function() {
+    		  		 // $("#social").fadeIn(fadeSocial);
+    		  	});
+    		  });
+    	});
+
+    } else if (button.id == "graphicButton") {
+
     }
+
+
+
+    console.log("Current page is: " + currentPage);
 }
 
 
@@ -84,7 +105,7 @@ function divLoad() {
 //adding the shadow to header/navbar
 window.onscroll = function() {
     var nav = document.getElementById('header');
-    if ( window.pageYOffset > 30 ) {
+    if (window.pageYOffset > 30) {
         nav.classList.add("headerShadow");
     } else {
         nav.classList.remove("headerShadow");

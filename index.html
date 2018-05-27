@@ -55,42 +55,45 @@
         </div>
         <!-- end of about me -->
         <!-- my work -->
-        <div id="myWork">
+        <div id="myWorkBox">
             <div class="contentPadding"></div>
             <h1>MY WORK</h1>
             <div id="workButtons">
                 <div class="button">
-                    <label class="btn btn-primary myButton profileButton" id="aboutButton" onmouseup="navigate(this);">PRODUCT DESIGN</label>
+                    <label class="btn btn-primary myButton workButton" id="productButton" onmouseup="navigate(this);">PRODUCT DESIGN</label>
                 </div>
                 <div class="button">
-                    <label class="btn btn-primary myButton profileButton" id="aboutButton" onmouseup="navigate(this);">PRODUCT DESIGN</label>
-                </div>
-            </div>
-            <div id="workBox" style="display: none">
-                <div class="button">
-                    <label class="btn btn-primary myButton profileButton" id="aboutButton" onmouseup="navigate(this);">MY WORK</label>
-                </div>
-                <h2>Product Design</h2>
-                <div id="productBox">
-                    <div class="productTab">
-                        Branja
-                        <br/>
-                        <img src="images/branja.png" alt="branja" class="productTabImage">
-                    </div>
-                    <div class="emptyProductTab">
-                        more coming
-                        <div class="plus">
-                            +
-                        </div>
-                    </div>
-                </div>
-                <h2>Graphic Design</h2>
-                <div id="graphicBox">
-                    Coming Soon!
+                    <label class="btn btn-primary myButton workButton" id="graphicButton" onmouseup="navigate(this);">GRAPHIC DESIGN</label>
                 </div>
             </div>
         </div>
-        <!-- end of mywork -->
+        <div id="productBox">
+        	<div class="contentPadding"></div>
+            <h1>PRODUCT DESIGN</h1>
+            <div id="productBoxTabs">
+                <div class="productTab">
+                    Branja
+                    <br/>
+                    <img src="images/branja.png" alt="branja" class="productTabImage">
+                </div>
+<!--                 <div class="emptyProductTab">
+                    more coming
+                    <div class="plus">
+                        +
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div id="graphicBox">
+            <h2>Graphic Design</h2> Coming Soon!
+        </div>
+        <div id="myWorkButtonBox">
+            <div class="button">
+                <label class="btn btn-primary myButton workButton" id="myWorkButton" onmouseup="navigate(this);">BACK</label>
+            </div>
+        </div>
+    </div>
+    <!-- end of mywork -->
     </div>
     <div id="social">
         <svg class="socialIcon" id="instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
