@@ -5,9 +5,7 @@ var currentPage = "home"
 
 function navigate(button) {
 
-    // if (button.id != "productButton" && button.id != "graphicButton") {
     $("#social").fadeOut(fadeSpeed);
-    // }
 
     wait(100);
 
