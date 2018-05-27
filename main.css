@@ -40,6 +40,7 @@ body {
     font-size: 18px;
     text-align: center;
     padding-top: 6px;
+    margin-left: 40px;
 }
 
 .contentPadding {
@@ -221,6 +222,9 @@ h2 {
         height: 70px;
         padding-top: 20px;
         /*border: black 2px solid;*/
+    }
+    #headerTitle {
+    	margin-left: 0px;
     }
 
     .contentPadding {
