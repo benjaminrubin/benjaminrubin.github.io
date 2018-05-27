@@ -15,7 +15,7 @@ function navigate(button) {
             $("#aboutMe").fadeOut(fadeSpeed, function() {
                 $("#header").fadeOut(fadeSpeed + 100, function() {
                     $("#home").fadeIn(fadeSpeed, function() {
-                        $("#social").fadeIn(fadeSocial);
+                        $("#social").stop(true,true).fadeIn(fadeSocial);
                     });
                 });
             });
@@ -24,7 +24,7 @@ function navigate(button) {
             $("#myWork").fadeOut(fadeSpeed, function() {
                 $("#header").fadeOut(fadeSpeed + 100, function() {
                     $("#home").fadeIn(fadeSpeed, function() {
-                        $("#social").fadeIn(fadeSocial);
+                        $("#social").stop(true,true).fadeIn(fadeSocial);
                     });
                 });
             });
@@ -77,9 +77,11 @@ function divLoad() {
     // });
 
     $("#details").fadeIn(600);
-    $("#social").fadeIn(1600);
+    $("#social").fadeIn(fadeSocial);
 }
 
+
+//adding the shadow to header/navbar
 window.onscroll = function() {
     var nav = document.getElementById('header');
     if ( window.pageYOffset > 30 ) {

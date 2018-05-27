@@ -1,19 +1,92 @@
 #myWork {
-	display: none;
-	margin: 0px auto;
+    display: none;
+    margin: 0px auto;
     margin-top: 30px;
-    max-width: 500px;
+    max-width: 1200px;
+}
+
+#workButtons {
+	text-align: center;
+}
+
+#workBox {
+    padding: 20px;
+}
+
+#productBox {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 30px;
+	justify-content: center;
+}
+
+.productTab {
+	font-size: 1rem;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+	transition: all .1s ease !important;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
+}
+
+.emptyProductTab{
+	display: table;
+	vertical-align: middle;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	/*font-size: 40px;*/
+	color: gray;
+	border-radius: 15px;
+	border: 2px dashed gray;
+}
+.plus {
+	margin: auto auto;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.productTab:hover {
+    transform: translateY(2px);
+
+    box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.productTabImage {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+#graphicBox {
+	text-align: center;
 }
 
 
 /* iPad vertical is 768px */
 
 @media (min-width: 668px) {
-/*    #myWork {
-		margin-top: 20px;
-		max-width: 500px;
-    }*/
+    .productTab {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
+    }
+
+    .productTab:hover {
+        transform: translateY(-1px);
+
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.30);
+    }
+
+    .productTab:active {
+        transform: translateY(1px);
+
+        box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+    }
 }
+
+
 
 
 
@@ -21,6 +94,8 @@
 /* Small desktop starts at 992px*/
 
 @media (min-width: 992px) {}
+
+
 
 
 
