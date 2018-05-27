@@ -187,6 +187,7 @@ h1 {
 
 #homeButton {
     position: absolute;
+    padding: 7px 7px !important;
 }
 
 
