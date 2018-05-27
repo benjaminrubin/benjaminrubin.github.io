@@ -6,7 +6,7 @@ var currentPage = "home"
 function navigate(button) {
 
     // if (button.id != "productButton" && button.id != "graphicButton") {
-        $("#social").fadeOut(fadeSpeed);
+    $("#social").fadeOut(fadeSpeed);
     // }
 
 
@@ -47,31 +47,64 @@ function navigate(button) {
 
     // navigating to work
     else if (button.id == "workButton") {
-        $("#home").fadeOut(fadeSpeed, function() {
-            $("#myWorkBox").fadeIn(fadeSpeed, function() {
-                $("#workButtons").fadeIn(fadeSpeed, function() {
-                    $("#header").fadeIn(fadeSpeed, function() {
-                        $("#social").fadeIn(fadeSocial);
+
+        if (currentPage == "home") {
+            $("#home").fadeOut(fadeSpeed, function() {
+                $("#myWorkBox").fadeIn(fadeSpeed, function() {
+                    $("#workButtons").fadeIn(fadeSpeed, function() {
+                        $("#header").fadeIn(fadeSpeed, function() {
+                            $("#social").fadeIn(fadeSocial);
+                        });
                     });
                 });
             });
-        });
+        }
         currentPage = "work";
-    } else if (button.id == "productButton") {
+    }
+    else if (button.id == "productButton"){
     	$("#myWorkBox").fadeOut(fadeSpeed, function() {
-    		  $("#productBox").fadeIn(fadeSpeed, function(){
-    		  	$("#myWorkButtonBox").fadeIn(fadeSpeed , function() {
-    		  		 // $("#social").fadeIn(fadeSocial);
-    		  	});
-    		  });
-    	});
+                $("#productBox").fadeIn(fadeSpeed, function() {
+                    $("#backButtonBox").fadeIn(fadeSpeed, function() {
+                        // $("#social").fadeIn(fadeSocial);
+                    });
+                });
+            });
 
-    } else if (button.id == "graphicButton") {
+            currentPage = "productDesign";
+    }
+    else if (button.id == "graphicButton") {
+    	$("#myWorkBox").fadeOut(fadeSpeed, function() {
+                $("#graphicBox").fadeIn(fadeSpeed, function() {
+                    $("#backButtonBox").fadeIn(fadeSpeed, function() {
+                        // $("#social").fadeIn(fadeSocial);
+                    });
+                });
+            });
 
+    	currentPage = "graphicDesign";
     }
 
+    else if (button.id == "backButton") {
 
+    	if (currentPage == "productDesign"){
+    		 $("#backButtonBox").fadeOut(fadeSpeed, function() {
+    		 	$("#productBox").fadeOut(fadeSpeed, function() {
+    		 		$("#myWorkBox").fadeIn(fadeSpeed);
+    		 	});
+    		 });
 
+    		 currentPage = "work";
+    	}
+    	else if (currentPage == "graphicDesign"){
+    		 $("#backButtonBox").fadeOut(fadeSpeed, function() {
+    		 	$("#graphicBox").fadeOut(fadeSpeed, function() {
+    		 		$("#myWorkBox").fadeIn(fadeSpeed);
+    		 	});
+    		 });
+
+    		 currentPage = "work";
+    	}
+    }
     console.log("Current page is: " + currentPage);
 }
 
