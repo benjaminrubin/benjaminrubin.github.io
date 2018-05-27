@@ -9,7 +9,6 @@ function navigate(button) {
     $("#social").fadeOut(fadeSpeed);
     // }
 
-
     wait(100);
 
     if (button.id == "homeButton") {
@@ -30,7 +29,29 @@ function navigate(button) {
                     });
                 });
             });
+        } else if (currentPage == "productDesign") {
+            $("#backButtonBox").fadeOut(fadeSpeed, function() {
+                $("#productBox").fadeOut(fadeSpeed, function() {
+                    $("#header").fadeOut(fadeSpeed + 100, function() {
+                        $("#home").fadeIn(fadeSpeed, function() {
+                            $("#social").stop(true, true).fadeIn(fadeSocial);
+                        });
+                    });
+                });
+            });
+        } else if (currentPage == "graphicDesign") {
+            $("#backButtonBox").fadeOut(fadeSpeed, function() {
+                $("#graphicBox").fadeOut(fadeSpeed, function() {
+                    $("#header").fadeOut(fadeSpeed + 100, function() {
+                        $("#home").fadeIn(fadeSpeed, function() {
+                            $("#social").stop(true, true).fadeIn(fadeSocial);
+                        });
+                    });
+                });
+            });
         }
+
+
         currentPage = "home";
     }
 
@@ -60,50 +81,49 @@ function navigate(button) {
             });
         }
         currentPage = "work";
-    }
-    else if (button.id == "productButton"){
-    	$("#myWorkBox").fadeOut(fadeSpeed, function() {
-                $("#productBox").fadeIn(fadeSpeed, function() {
-                    $("#backButtonBox").fadeIn(fadeSpeed, function() {
-                        // $("#social").fadeIn(fadeSocial);
+    } else if (button.id == "productButton") {
+        $("#myWorkBox").fadeOut(fadeSpeed, function() {
+            $("#productBox").fadeIn(fadeSpeed, function() {
+                $("#backButtonBox").fadeIn(fadeSpeed, function() {
+                    // $("#social").fadeIn(fadeSocial);
+                });
+            });
+        });
+
+        currentPage = "productDesign";
+    } else if (button.id == "graphicButton") {
+        $("#myWorkBox").fadeOut(fadeSpeed, function() {
+            $("#graphicBox").fadeIn(fadeSpeed, function() {
+                $("#backButtonBox").fadeIn(fadeSpeed, function() {
+                    // $("#social").fadeIn(fadeSocial);
+                });
+            });
+        });
+
+        currentPage = "graphicDesign";
+    } else if (button.id == "backButton") {
+
+        if (currentPage == "productDesign") {
+            $("#backButtonBox").fadeOut(fadeSpeed, function() {
+                $("#productBox").fadeOut(fadeSpeed, function() {
+                    $("#myWorkBox").fadeIn(fadeSpeed, function() {
+                    	 $("#social").stop(true, true).fadeIn(fadeSocial);
                     });
                 });
             });
 
-            currentPage = "productDesign";
-    }
-    else if (button.id == "graphicButton") {
-    	$("#myWorkBox").fadeOut(fadeSpeed, function() {
-                $("#graphicBox").fadeIn(fadeSpeed, function() {
-                    $("#backButtonBox").fadeIn(fadeSpeed, function() {
-                        // $("#social").fadeIn(fadeSocial);
+            currentPage = "work";
+        } else if (currentPage == "graphicDesign") {
+            $("#backButtonBox").fadeOut(fadeSpeed, function() {
+                $("#graphicBox").fadeOut(fadeSpeed, function() {
+                    $("#myWorkBox").fadeIn(fadeSpeed, function() {
+                    	 $("#social").stop(true, true).fadeIn(fadeSocial);
                     });
                 });
             });
 
-    	currentPage = "graphicDesign";
-    }
-
-    else if (button.id == "backButton") {
-
-    	if (currentPage == "productDesign"){
-    		 $("#backButtonBox").fadeOut(fadeSpeed, function() {
-    		 	$("#productBox").fadeOut(fadeSpeed, function() {
-    		 		$("#myWorkBox").fadeIn(fadeSpeed);
-    		 	});
-    		 });
-
-    		 currentPage = "work";
-    	}
-    	else if (currentPage == "graphicDesign"){
-    		 $("#backButtonBox").fadeOut(fadeSpeed, function() {
-    		 	$("#graphicBox").fadeOut(fadeSpeed, function() {
-    		 		$("#myWorkBox").fadeIn(fadeSpeed);
-    		 	});
-    		 });
-
-    		 currentPage = "work";
-    	}
+            currentPage = "work";
+        }
     }
     console.log("Current page is: " + currentPage);
 }
