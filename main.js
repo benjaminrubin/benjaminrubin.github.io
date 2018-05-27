@@ -13,7 +13,7 @@ function navigate(button) {
 
         if (currentPage == "about") {
             $("#aboutMe").fadeOut(fadeSpeed, function() {
-                $("#header").fadeOut(fadeSpeed, function() {
+                $("#header").fadeOut(fadeSpeed + 100, function() {
                     $("#home").fadeIn(fadeSpeed, function() {
                         $("#social").fadeIn(fadeSocial);
                     });
@@ -22,7 +22,7 @@ function navigate(button) {
         }
         else if (currentPage == "work") {
             $("#myWork").fadeOut(fadeSpeed, function() {
-                $("#header").fadeOut(fadeSpeed, function() {
+                $("#header").fadeOut(fadeSpeed + 100, function() {
                     $("#home").fadeIn(fadeSpeed, function() {
                         $("#social").fadeIn(fadeSocial);
                     });
