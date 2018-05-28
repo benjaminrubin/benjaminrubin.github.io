@@ -11,7 +11,7 @@
 
 #aboutBox {
 	max-width: 800px;
-	margin: auto auto;
+	margin: auto;
 }
 
 /* iPad vertical is 768px */
@@ -21,8 +21,6 @@
 		/*margin-top: 30px;*/
     }
 }
-
-
 
 
 /* Small desktop starts at 992px*/

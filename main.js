@@ -5,6 +5,8 @@ var currentPage = "home"
 
 function navigate(button) {
 
+    console.log("Button id is: " + button.id)
+
     $("#social").fadeOut(fadeSpeed);
 
     wait(100);
@@ -48,17 +50,15 @@ function navigate(button) {
                 });
             });
         }
-
-
         currentPage = "home";
     }
-
     // navigating to about
     else if (button.id == "aboutButton") {
         $("#home").fadeOut(fadeSpeed, function() {
-            $("#aboutMe").fadeIn(fadeSpeed);
             $("#header").fadeIn(fadeSpeed, function() {
-                $("#social").fadeIn(fadeSocial);
+                $("#aboutMe").fadeIn(fadeSpeed, function() {
+                    $("#social").fadeIn(fadeSocial);
+                });
             });
         });
         currentPage = "about";
@@ -82,9 +82,7 @@ function navigate(button) {
     } else if (button.id == "productButton") {
         $("#myWorkBox").fadeOut(fadeSpeed, function() {
             $("#productBox").fadeIn(fadeSpeed, function() {
-                $("#backButtonBox").fadeIn(fadeSpeed, function() {
-                    // $("#social").fadeIn(fadeSocial);
-                });
+                $("#backButtonBox").fadeIn(fadeSpeed, function() {});
             });
         });
 
@@ -92,9 +90,7 @@ function navigate(button) {
     } else if (button.id == "graphicButton") {
         $("#myWorkBox").fadeOut(fadeSpeed, function() {
             $("#graphicBox").fadeIn(fadeSpeed, function() {
-                $("#backButtonBox").fadeIn(fadeSpeed, function() {
-                    // $("#social").fadeIn(fadeSocial);
-                });
+                $("#backButtonBox").fadeIn(fadeSpeed, function() {});
             });
         });
 
@@ -105,7 +101,7 @@ function navigate(button) {
             $("#backButtonBox").fadeOut(fadeSpeed, function() {
                 $("#productBox").fadeOut(fadeSpeed, function() {
                     $("#myWorkBox").fadeIn(fadeSpeed, function() {
-                    	 $("#social").stop(true, true).fadeIn(fadeSocial);
+                        $("#social").stop(true, true).fadeIn(fadeSocial);
                     });
                 });
             });
@@ -115,15 +111,48 @@ function navigate(button) {
             $("#backButtonBox").fadeOut(fadeSpeed, function() {
                 $("#graphicBox").fadeOut(fadeSpeed, function() {
                     $("#myWorkBox").fadeIn(fadeSpeed, function() {
-                    	 $("#social").stop(true, true).fadeIn(fadeSocial);
+                        $("#social").stop(true, true).fadeIn(fadeSocial);
                     });
                 });
             });
 
             currentPage = "work";
+        } else if (currentPage.includes("Product")) {
+            navigateProducts("#branja", "#productBox");
+            currentPage = "productDesign";
+        }
+    } else if (button.id.includes("Product")) {
+        if (button.id.includes("branja")) {
+            navigateProducts("#productBox", "#branja");
+            currentPage = "branjaProduct";
         }
     }
+
     console.log("Current page is: " + currentPage);
+}
+
+function homeNavigation(origin, destination) {
+
+    if (origin == "home") {
+        $("#social").fadeOut(fadeSpeed, function() {
+            $(origin).fadeOut(fadeSpeed, function() {
+                $("#header").fadeIn(fadeSpeed, function() {
+                    $(destination).fadeIn(fadeSpeed, function() {
+                        $("#social").fadeIn(fadeSocial);
+                    });
+                });
+            });
+        });
+    }
+
+    currentPage = destination;
+}
+
+
+function navigateProducts(origin, destination) {
+    $(origin).fadeOut(fadeSpeed, function() {
+        $(destination).fadeIn(fadeSpeed);
+    });
 }
 
 
@@ -142,12 +171,7 @@ for (var i = 0; i < socialIcons.length; i++) {
     }
 }
 
-
 function divLoad() {
-    // $("#details").fadeIn(600 , function(){
-    // 	    $("#social").fadeIn(600);
-    // });
-
     $("#details").fadeIn(600);
     $("#social").fadeIn(fadeSocial);
 }

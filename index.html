@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="aboutMe.css">
     <link rel="stylesheet" type="text/css" href="myWork.css">
+    <link rel="stylesheet" type="text/css" href="branja.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Benjamin Floyd Rubin</title>
@@ -60,39 +61,40 @@
             <h1>MY WORK</h1>
             <div id="workButtons">
                 <div class="button">
-                    <label class="btn btn-primary myButton workButton" id="productButton" onmouseup="navigate(this);">PRODUCT DESIGN</label>
+                    <label class="btn btn-primary myButton workButton" id="productButton" onmouseup="navigate(this);">PRODUCT DESIGN<i class="material-icons icon" style="color: #79d279;">apps</i></label>
                 </div>
                 <div class="button">
-                    <label class="btn btn-primary myButton workButton" id="graphicButton" onmouseup="navigate(this);">GRAPHIC DESIGN</label>
+                    <label class="btn btn-primary myButton workButton" id="graphicButton" onmouseup="navigate(this);">GRAPHIC DESIGN<i class="material-icons icon" style="color: #6699ff;">brush</i></label>
                 </div>
             </div>
         </div>
         <div id="productBox">
-        	<div class="contentPadding"></div>
+            <div class="contentPadding"></div>
             <h1>PRODUCT DESIGN</h1>
             <div id="productBoxTabs">
-                <div class="productTab">
-  						<div class="productTabName">Branja</div>
+                <div class="productTab" id="branjaProduct" onmouseup="navigate(this);">
+                    <div class="productTabName">Branja</div>
                     <img src="images/branja.jpg" alt="branja" class="productTabImage">
                 </div>
-<!--                 <div class="emptyProductTab">
-                    more coming
-                    <div class="plus">
-                        +
-                    </div>
-                </div> -->
+            </div>
+        </div>
+        <div id="branja">
+            <div class="contentPadding"></div>
+            <h1>Branja</h1>
+            <div id="branjaBody">
+            	This is branja. I will tell you all about it.
             </div>
         </div>
         <div id="graphicBox">
-        	<div class="contentPadding"></div>
+            <div class="contentPadding"></div>
             <h1>GRAPHIC DESIGN</h1>
             <div id="graphicBoxTabs">
-            	Coming Soon!
+                Coming Soon!
             </div>
         </div>
         <div id="backButtonBox">
             <div class="button">
-                <label class="btn btn-primary myButton workButton" id="backButton" onmouseup="navigate(this);">BACK</label>
+                <label class="btn btn-primary myButton" id="backButton" onmouseup="navigate(this);">BACK</label>
             </div>
         </div>
     </div>
