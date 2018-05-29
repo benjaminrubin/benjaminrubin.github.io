@@ -165,7 +165,7 @@ for (var i = 0; i < socialIcons.length; i++) {
         } else if (this.id == "instagram") {
             window.open("https://www.instagram.com/benny__ruby/");
         } else if (this.id == "dribbble") {
-            // window.open("https://www.instagram.com/benny__ruby/");
+            window.open("https://dribbble.com/bnjmnrbn");
         } else if (this.id == "github") {
             window.open("https://github.com/benjaminrubin");
         }
