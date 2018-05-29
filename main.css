@@ -62,12 +62,13 @@ h2 {
 }
 
 #profileInfo {
+	display: none;
     line-height: 200%;
     margin-top: 20px;
 }
 
 #details {
-    display: none;
+    
 }
 
 #name {

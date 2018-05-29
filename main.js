@@ -173,8 +173,9 @@ for (var i = 0; i < socialIcons.length; i++) {
 }
 
 function divLoad() {
-    $("#details").fadeIn(600);
-    $("#social").fadeIn(fadeSocial);
+    $("#profileInfo").fadeIn(600, function() {
+    	$("#social").fadeIn(fadeSocial);
+    });
 }
 
 

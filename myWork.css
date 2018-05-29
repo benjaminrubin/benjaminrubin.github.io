@@ -23,7 +23,7 @@
 #software {
 	top: 22px;
 	left: -28px;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Gloria Hallelujah', cursive !important;
 	position: relative;
 }
 
