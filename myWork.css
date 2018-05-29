@@ -20,6 +20,20 @@
 	text-align: center;
 }
 
+#software {
+	top: 22px;
+	left: -28px;
+	font-family: 'Gloria Hallelujah', cursive;
+	position: relative;
+}
+
+#software #arrow {
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+}
+
 #workBox {
 	display: none;
     padding: 20px;
@@ -98,7 +112,6 @@
 	margin: 20px 20px;
 }
 
-
 .workButton {
 	margin: 10px 0px;
 	padding-right: 38px !important;
@@ -124,7 +137,6 @@
     vertical-align: middle;*/
 }
 
-
 #branja {
 	display: none;
 }
@@ -146,6 +158,10 @@
         transform: translateY(1px);
 
         box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+    }
+
+    #software {
+    	top: 40px;
     }
 }
 

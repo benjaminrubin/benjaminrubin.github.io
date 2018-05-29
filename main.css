@@ -189,7 +189,7 @@ h2 {
 }
 
 #instagram:hover {
-    fill: purple;
+    fill: #cc00cc;
 }
 
 #linkedin:hover {
@@ -198,6 +198,10 @@ h2 {
 
 #dribbble:hover {
     fill: #e600ac;
+}
+
+#github:hover {
+	fill: #ff6600;
 }
 
 #homeButton {
