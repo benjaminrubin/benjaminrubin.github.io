@@ -90,6 +90,13 @@ function wait(ms) {
 }
 
 
+function openMenu() {
+    $("#mobileMenu").fadeIn(150);
+}
+function closeMenu() {
+    $("#mobileMenu").fadeOut(150);
+}
+
 
 
 
