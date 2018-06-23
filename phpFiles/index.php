@@ -51,14 +51,15 @@
         <!-- end of home -->
     </div>
 
-<div w3-include-html="social.html"></div> 
+<?php require "social.html"; ?>
 
 </body>
 
 </html>
-<script src="include.js"></script>
 <script>
-includeHTML();
+// window.onload = function() {  // reload file every second
+// 	setInterval ( function() { location.reload(); } , 1000);
+// };
 </script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
