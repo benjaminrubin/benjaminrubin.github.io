@@ -1,0 +1,58 @@
+#graphicDesignBox {
+	width: 280px;
+	margin: auto auto;
+	margin-bottom: 40px;
+	display: none;
+}
+
+#galleryBox {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.galleryTab {
+	float: left;
+}
+
+.galleryThumbnail {
+	width: 70px;
+}
+
+.clear {
+	clear:both;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/*#links {
+	display: grid !important;
+	grid-template-columns: auto auto;
+}*/
+
+/* iPad vertical is 768px */
+
+@media (min-width: 668px) {
+	#graphicDesignBox {
+		width: 600px;
+		margin: auto auto;
+		margin-bottom: 40px;
+		display: none;
+	}
+	.galleryThumbnail {
+		width: 120px;
+	}
+}
+
+
+/* Small desktop starts at 992px*/
+
+@media (min-width: 992px) {}
+
+
+
+
+/* Larger desktop starts around 1200px */
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

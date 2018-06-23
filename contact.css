@@ -1,0 +1,16 @@
+#contactBox {
+	display: none;
+	max-width: 600px;
+	margin: auto auto;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#contactForm {
+	text-align: left;
+	margin: 0px 10px;
+}
+
+#contactDescription {
+	margin-top: 40px;
+}

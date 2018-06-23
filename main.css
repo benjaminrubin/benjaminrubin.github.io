@@ -20,9 +20,9 @@ body {
     text-align: center;
     padding-top: 10px;
     /*border: black 2px solid;*/
-    z-index: 999;
+    z-index: 990;
 
-    transition: all .4s ease ;
+    transition: all .4s ease;
 }
 
 .headerShadow {
@@ -35,22 +35,37 @@ body {
     font-size: 18px;
     text-align: center;
     padding-top: 6px;
-    margin-left: 40px;
+    margin: auto auto;
+    /*transition: all .2s ease;*/
+}
+
+#headerTitle:hover {
+    cursor: pointer;
+    color: #4da6ff; /*the color for all navigation links*/
 }
 
 .contentPadding {
-    padding-top: 70px;
+    padding-top: 60px;
+}
+
+.instructions {
+    margin: 5px auto;
+    text-align: center;
+    font-style: italic;
+    font-size: .8em;
+    max-width: 700px;
 }
 
 h1 {
-	position: relative;
+    position: relative;
     text-align: center;
     font-size: 30px !important;
+    /*color: #66b3ff !important;*/
 }
 
 h2 {
-	text-align: center;
-	font-size: 20px !important;
+    text-align: center;
+    font-size: 20px !important;
 }
 
 #home {
@@ -62,14 +77,12 @@ h2 {
 }
 
 #profileInfo {
-	display: none;
+    display: none;
     line-height: 200%;
     margin-top: 20px;
 }
 
-#details {
-    
-}
+#details {}
 
 #name {
     font-size: 23px;
@@ -95,7 +108,7 @@ h2 {
 
 #profileButtons {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 150px 150px;
     max-width: 300px;
     margin: auto auto;
     margin-top: 20px;
@@ -106,6 +119,7 @@ h2 {
 
     transition: all .3s ease !important;
 }
+
 
 
 
@@ -126,11 +140,26 @@ h2 {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
 }
 
+.profileButton {
+    margin: 0px 0px;
+    margin-right: 30px;
+    margin: 10px 0px;
+    padding-left: 38px !important;
+}
+
+.icon {
+    position: absolute;
+    top: 8px;
+    /*right: 7px;*/
+    left: 8px;
+}
+
 .myButton:hover {
     transform: translateY(2px);
 
     box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
 }
+
 
 
 /*.myButton:active {
@@ -158,6 +187,7 @@ h2 {
 .modal.profilePicModal {
     margin: auto auto;
 }
+
 
 
 
@@ -202,14 +232,65 @@ h2 {
 }
 
 #github:hover {
-	fill: #ff6600;
+    fill: #ff6600;
 }
 
-#homeButton {
-    position: absolute;
+#menuButton {
+	position: absolute;
+	right: 10px;
+	top: 4px;
     padding: 7px !important;
 }
 
+#menuButton:hover {
+	cursor: pointer;
+	color: #4da6ff;
+}
+
+
+#mobileMenu {
+	z-index: 999;
+	position: fixed;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
+	width: 200px;
+	height: 200px;
+	top: 13px;
+	right: 16px;
+	padding-left: 12px;
+	padding-top: 10px;
+	display: none;
+}
+
+#closeButton {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.mobLink {
+	margin: 10px;
+}
+
+.mobLink a {
+	color:#333333 !important;
+	font-size: 0.9em;	
+}
+
+.mobLink a:active {
+	 color: #4da6ff !important;
+	 text-decoration: none !important;
+}
+
+.mobLink a:hover {
+	 color: #4da6ff !important;
+	 text-decoration: none !important;
+}
+
+#navLinks {
+	display: none;
+}
 
 
 
@@ -218,24 +299,51 @@ h2 {
 
 @media (min-width: 668px) {
 
-	
+	#menuButton {
+		display: none;
+	}
+	#mobileMenu {
+		display: none;
+	}
+	#navLinks {
+		display: block;
+		float: right;
+		margin-top: 8px;
+		margin-right: 20px;
+	}
+	.navLink {
+		float:left;
+		margin-left: 20px;
+		color:#333333;
+	}
+
+	.navLink a {
+		color:#333333 !important;
+		font-size: 0.9em;	
+	}
+	.navLink:hover a {
+		 color: #4da6ff !important;
+		 text-decoration: none !important;
+	}
 
     #header {
-        height: 70px;
-        padding-top: 20px;
+        height: 60px;
+        /*padding-top: 20px;*/
         /*border: black 2px solid;*/
     }
     #headerTitle {
-    	margin-left: 0px;
-    }
-
-    .contentPadding {
-        padding-top:80px;
+        margin-left: 20px;
+        /*margin-right: 20px;*/
+        float: left;
     }
 
     #profilePic {
         height: 200px;
         width: 200px;
+    }
+
+    #profilePicHolder {
+        display: none;
     }
 
     #home {
@@ -252,7 +360,7 @@ h2 {
 
     #profileButtons {
         margin-left: 0px;
-        max-width: 100px;
+        max-width: 130px;
         margin-top: 24px;
     }
 
@@ -272,17 +380,13 @@ h2 {
         font-size: 18px;
     }
 
-    .profileButton {
-        margin: 0px 0px;
-        margin-right: 30px;
-    }
     /*dealing with the buttons*/
     .myButton {
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
     }
 
     .myButton:hover {
-        transform: translateY(-1px);
+        transform: translateY(-2px);
 
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.30);
     }
@@ -299,9 +403,11 @@ h2 {
 
 
 
+
 /* Small desktop starts at 992px*/
 
 @media (min-width: 992px) {}
+
 
 
 /* Larger desktop starts around 1200px */
