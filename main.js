@@ -9,21 +9,34 @@ function navigate(page) {
 }
 
 
-var socialIcons = document.querySelectorAll(".socialIcon");
-
-for (var i = 0; i < socialIcons.length; i++) {
-    socialIcons[i].onclick = function() {
-        if (this.id == "linkedin") {
+function openSocial(button){
+    console.log("in here")
+    if (button.id == "linkedin") {
             window.open("https://www.linkedin.com/in/benjaminfloydrubin/");
-        } else if (this.id == "instagram") {
+        } else if (button.id == "instagram") {
             window.open("https://www.instagram.com/benny__ruby/");
-        } else if (this.id == "dribbble") {
+        } else if (button.id == "dribbble") {
             window.open("https://dribbble.com/bnjmnrbn");
-        } else if (this.id == "github") {
+        } else if (button.id == "github") {
             window.open("https://github.com/benjaminrubin");
         }
-    }
 }
+
+// var socialIcons = document.querySelectorAll(".socialIcon");
+
+// for (var i = 0; i < socialIcons.length; i++) {
+//     socialIcons[i].onclick = function() {
+//         if (this.id == "linkedin") {
+//             window.open("https://www.linkedin.com/in/benjaminfloydrubin/");
+//         } else if (this.id == "instagram") {
+//             window.open("https://www.instagram.com/benny__ruby/");
+//         } else if (this.id == "dribbble") {
+//             window.open("https://dribbble.com/bnjmnrbn");
+//         } else if (this.id == "github") {
+//             window.open("https://github.com/benjaminrubin");
+//         }
+//     }
+// }
 
 function divLoad(page) {
     if (page == "home") {
