@@ -241,7 +241,7 @@ h2 {
 
 #menuButton {
 	position: absolute;
-	right: 10px;
+	right: 5px;
 	top: 4px;
     padding: 7px !important;
 }
@@ -259,7 +259,7 @@ h2 {
 	border-radius: 8px;
 	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
 	width: 200px;
-	height: 170px;
+	height: 210px;
 	top: 13px;
 	right: 16px;
 	padding-left: 12px;
@@ -275,11 +275,12 @@ h2 {
 
 .mobLink {
 	margin: 10px;
+    margin-bottom: 20px;
 }
 
 .mobLink a {
 	color:#333333 !important;
-	font-size: 0.9em;	
+	font-size: 1.1em;	
 }
 
 .mobLink a:active {
