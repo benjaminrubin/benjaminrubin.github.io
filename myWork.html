@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="aboutMe.css">
     <link rel="stylesheet" type="text/css" href="myWork.css">
     <link rel="stylesheet" type="text/css" href="branja.css">
-    <link rel="stylesheet" type="text/css" href="productDesign.css">
+    <link rel="stylesheet" type="text/css" href="myWork.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,7 +24,7 @@
     <title>Benjamin Floyd Rubin</title>
 </head>
 
-<body onload="divLoad('productDesign');">
+<body onload="divLoad('myWork');">
 
 <div w3-include-html="navigation.html"></div> 
 
@@ -32,33 +32,37 @@
         <!-- my work -->
         
 
-        <div id="productBox">
+        <div id="projectBox">
             <h1>MY WORK</h1>
             <div class="instructions">Click on a thumbnail to learn more</div>
-            <div id="productBoxTabs">
-                 <div class="productTab" onmouseup="navigate('graphicDesign.html');">
-                    <div class="productTabScreen" style="padding-top: 60px;">
-                        <div class="productTabName">Graphic Design Gallery</div>
+            <div id="projectBoxTabs">
+                <div class="projectName">Gaphic Design</div>
+                 <div class="projectTab" onmouseup="navigate('graphicDesign.html');">
+                    <div class="projectTabScreen" style="padding-top: 60px;">
+                        <div class="projectTabName">Graphic Design Gallery</div>
                     </div>
-                    <img src="images/thumbnails/graphic.png" alt="graphic design portfolio" class="productTabThumbnail" style="object-fit: cover;">
+                    <img src="images/thumbnails/graphic.png" alt="graphic design portfolio" class="projectTabThumbnail" style="object-fit: cover;">
                 </div>            
-                <div class="productTab" onmouseup="navigate('branja.html');">
-                    <div class="productTabScreen" style="padding-top: 80px;">
-                        <div class="productTabName">Branja</div>
+                <div class="projectName">Branja</div>
+                <div class="projectTab" onmouseup="navigate('branja.html');">
+                    <div class="projectTabScreen" style="padding-top: 80px;">
+                        <div class="projectTabName">Branja</div>
                     </div>
-                    <img src="images/thumbnails/branja.jpg" alt="branja" class="productTabThumbnail">
+                    <img src="images/thumbnails/branja.jpg" alt="branja" class="projectTabThumbnail">
                 </div>
-                <div class="productTab" onmouseup="window.open('https://303.itpwebdev.com/~benjamfr/student_page.html','_blank');">
-                    <div class="productTabScreen" style="padding-top: 50px;">
-                    <div class="productTabName">Full Stack Web Dev Course @ USC</div> 
+                <div class="projectName">Full Stack Dev</div>
+                <div class="projectTab" onmouseup="window.open('https://303.itpwebdev.com/~benjamfr/student_page.html','_blank');">
+                    <div class="projectTabScreen" style="padding-top: 50px;">
+                    <div class="projectTabName">Full Stack Web Dev Course @ USC</div> 
                 </div>
-                    <img src="images/thumbnails/viterbi2.png" alt="usc fullstack course" class="productTabThumbnail">
+                    <img src="images/thumbnails/viterbi2.png" alt="usc fullstack course" class="projectTabThumbnail">
                 </div>
-                <div class="productTab">
-                    <div class="productTabScreen" style="padding-top: 60px;">
-                        <div class="productTabName">Shalom Ethiopia<br>(Coming soon)</div>
+                <div class="projectName">Shalom Ethiopia</div>
+                <div class="projectTab">
+                    <div class="projectTabScreen" style="padding-top: 60px;">
+                        <div class="projectTabName">Shalom Ethiopia<br>(Coming soon)</div>
                     </div>
-                    <img src="images/thumbnails/ethiopia.jpg" alt="branja" style="object-fit: cover; opacity: 0.8" class="productTabThumbnail"">
+                    <img src="images/thumbnails/ethiopia.jpg" alt="branja" style="object-fit: cover; opacity: 0.8" class="projectTabThumbnail"">
                 </div>
             </div>
         </div>

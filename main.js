@@ -52,13 +52,7 @@ function divLoad(page) {
         });
     } else if (page == "myWork") {
     	$("#header").fadeIn(fadeSpeed, function() {
-            $("#myWorkBox").fadeIn(fadeSpeed, function() {
-           		$("#social").fadeIn(fadeSocial); 	
-            });
-        });
-    } else if (page == "productDesign") {
-    	$("#header").fadeIn(fadeSpeed, function() {
-            $("#productBox").fadeIn(fadeSpeed, function() {
+            $("#projectBox").fadeIn(fadeSpeed, function() {
            		$("#social").fadeIn(fadeSocial); 	
             });
         });
