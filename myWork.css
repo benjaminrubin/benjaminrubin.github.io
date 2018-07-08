@@ -2,6 +2,7 @@
 #projectBox {
     position: relative;
     display: none;
+    margin-top: 10px;
 }
 
 #projectBoxTabs {

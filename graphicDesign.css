@@ -1,7 +1,9 @@
 #graphicDesignBox {
 	width: 280px;
-	margin: auto auto;
+	margin-top: 15px;
 	margin-bottom: 40px;
+	margin-right: auto;
+	margin-left: auto;
 	display: none;
 }
 
@@ -36,7 +38,6 @@
 @media (min-width: 668px) {
 	#graphicDesignBox {
 		width: 600px;
-		margin: auto auto;
 		margin-bottom: 40px;
 		display: none;
 	}
