@@ -5,7 +5,12 @@ var currentPage = "home"
 
 function navigate(page) {
 
-	window.open(page, '_self');
+    if(page == "benjaminrubin_resume.pdf"){
+        window.open(page, '_blank');
+    }
+    else{
+        window.open(page, '_self');
+    }
 }
 
 
