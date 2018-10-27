@@ -119,7 +119,7 @@
 
     .project-tab-name {
 
-    color:rgb(255, 255, 255, 0);
+    color:rgba(255, 255, 255, 0);
     transition: .3s ease;
     height: 210px;
     display: grid;
