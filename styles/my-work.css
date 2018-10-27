@@ -193,8 +193,8 @@
 @media (min-width: 992px) {
 
     #project-box-tabs {
-        -ms-grid-columns: auto auto auto auto auto;
-            grid-template-columns: auto auto auto auto auto;
+        -ms-grid-columns: auto auto auto auto;
+            grid-template-columns: auto auto auto auto;
     }
 }
 
