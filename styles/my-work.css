@@ -56,7 +56,7 @@
     font-size: 1.3em;
     /*font-weight: 100  ;*/
     z-index: 3;
-    background:rgb(0, 46, 77, 0);
+    background:rgba(0, 46, 77, 0);
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
@@ -78,11 +78,11 @@
 }
 
 .project-tab:hover .project-tab-screen {
-    background:rgb(0, 46, 77, 0.6);
+    background:rgba(0, 46, 77, 0.6);
 }
 
 .project-tab:hover .project-tab-name {
-    color:rgb(255, 255, 255, 1);
+    color:rgba(255, 255, 255, 1);
 }
 
 
@@ -136,7 +136,7 @@
 
     .project-tab-name {
 
-    color:rgb(255, 255, 255, 0);
+    color:rgba(255, 255, 255, 0);
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
