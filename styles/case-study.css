@@ -194,14 +194,19 @@ h4 {
     margin-bottom: 5px;
 }
 
+#graphic-body {
+    padding: 10px;
+}
+
 .graphic-gallery {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-left: -30px;
+    padding-right: -30px;
 }
 
 .graphic-column {
