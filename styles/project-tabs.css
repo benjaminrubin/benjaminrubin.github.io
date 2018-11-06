@@ -62,8 +62,9 @@
 
 .project-name {
     text-align: center;
-    font-size: 1.2rem;
-    top: 10px;
+    font-size: .9rem;
+    /*top: 10px;*/
+    margin-bottom: 4px;
 }
 
 .project-tab:hover .project-tab-screen {
