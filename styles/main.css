@@ -12,17 +12,10 @@
 @font-face {
     font-family: 'Futura';
     font-weight: 400;
-/*        src:
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff') format('woff'),
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff2') format('woff2');
-*/
-    /*    src:
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff') format('woff'),
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff2') format('woff2');
-*/
-    src:
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/Futura-Book.woff') format('woff');
-
+        src:
+        /*url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff') format('woff'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff2') format('woff2'),*/
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/Futura_Light_Regular.otf') format('otf');
 }
 
 @font-face {
