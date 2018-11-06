@@ -24,8 +24,8 @@
     font-family: 'Futura';
     font-weight: 100;
     src:
-     url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/Futura_Light_Regular.otf) format('otf');
-     /*url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-light.woff2) format('woff2');*/
+     /*url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/Futura_Light_Regular.otf) format('otf'),*/
+     url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-lightoblique.ttf) format('ttf');
 }
 
 /*@font-face {
