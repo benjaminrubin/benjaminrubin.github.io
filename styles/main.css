@@ -6,46 +6,33 @@
     src: url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
         url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
         url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
-}   
-      
+}
 
-/*@font-face {
-    font-family: 'Futura';
-    font-weight: 400;
-    src: url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.eot');
-    src: url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff2') format('woff2'),
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff') format('woff'),
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.ttf') format('truetype');
-}*/
 
 @font-face {
     font-family: 'Futura';
-    /*font-weight: 400;*/
-    src:
-     url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura_light_bt-webfont.woff') format('woff'),
-     url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura_light_bt-webfont.woff2') format('woff2');
-}
+    font-weight: 400;
+        src:
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff') format('woff'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff2') format('woff2');
 
-
-/*@font-face {
-    font-family: 'futura_lt_btlight_italic';
-    src: url('futura_light_italic_font-webfont.woff2') format('woff2'),
-         url('futura_light_italic_font-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}*/
-
-
-/*@font-face {
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 200;
-    src: url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-light.eot');
-    src: url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-light.woff2) format('woff2'),
-        url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-light.woff) format('woff'),
-        url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-light.ttf) format('truetype');
-}
+    /*    src:
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff') format('woff'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff2') format('woff2');
 */
+/*    src:
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_book_font-webfont.woff') format('woff'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_book_font-webfont.woff2') format('woff2');
+*/
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-weight: 100;
+    src:
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura_light_bt-webfont.woff') format('woff'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura_light_bt-webfont.woff2') format('woff2');
+}
 
 
 .material-icons {
@@ -221,7 +208,7 @@ footer {
     margin: 0px 0px;
     /*margin-right: 30px;*/
     /*margin: 10px 0px;*/
-    padding-left: 35px !important;
+    padding-left: 39px !important;
 }
 
 
@@ -237,8 +224,8 @@ footer {
 
 .icon {
     position: absolute;
-    top: 7px;
-    left: 8px;
+    top: 5px;
+    left: 10px;
 }
 
 
