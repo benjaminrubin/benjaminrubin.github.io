@@ -9,20 +9,21 @@
 }   
       
 
-@font-face {
+/*@font-face {
     font-family: 'Futura';
+    font-weight: 400;
     src: url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.eot');
-    src: url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff2) format('woff2'),
-        url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff) format('woff'),
-        url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.ttf) format('truetype');
-}
+    src: url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff2') format('woff2'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.woff') format('woff'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura.ttf') format('truetype');
+}*/
 
 @font-face {
     font-family: 'Futura';
-    font-weight: 100;
+    /*font-weight: 400;*/
     src:
-     /*url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/Futura_Light_Regular.otf) format('otf'),*/
-     url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-lightoblique.ttf) format('ttf');
+     url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura_light_bt-webfont.woff') format('woff'),
+     url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura_light_bt-webfont.woff2') format('woff2');
 }
 
 
@@ -34,14 +35,6 @@
     font-style: normal;
 }*/
 
-/*@font-face {
-    font-family: 'Futura';
-    font-weight: 100;
-    src: local('Futura-Light-Oblique'),
-        url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-lightoblique.woff2) format('woff2'),
-        url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-lightoblique.woff) format('woff'),
-        url(https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura-lightoblique.ttf) format('truetype');
-}*/
 
 /*@font-face {
     font-family: 'Futura';
