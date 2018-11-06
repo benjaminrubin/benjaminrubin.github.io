@@ -13,9 +13,9 @@
     font-family: 'Futura';
     font-weight: 400;
         src:
-        /*url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff') format('woff'),
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff2') format('woff2'),*/
-        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/Futura_Light_Regular.otf') format('otf');
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff') format('woff'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/futura_medium_bt-webfont.woff2') format('woff2'),
+        url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura_v2/Futura_Light_Regularr.otf') format('otf');
 }
 
 @font-face {
@@ -56,7 +56,7 @@
 body {
     margin: 0;
     height: 100%;
-    font-family: Futura, 'Roboto', 'Source Sans Pro', sans-serif;
+    font-family: 'Futura', 'Roboto', 'Source Sans Pro', sans-serif;
     color: #333333;
 
     padding-bottom: 50px !important;
@@ -70,6 +70,7 @@ body {
 
 h1 {
     position: relative;
+    left: -1px;
     font-size: 23px;
     font-weight: normal;
     padding: 0px;
