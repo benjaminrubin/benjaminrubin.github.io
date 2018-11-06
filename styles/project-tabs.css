@@ -1,3 +1,9 @@
+.instructions {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    /*max-width: 700px;*/
+}
 
 #project-box {
     display: none;
@@ -5,13 +11,6 @@
     /*display: none;*/
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-.instructions {
-    text-align: center;
-    font-style: italic;
-    font-size: 14px;
-    /*max-width: 700px;*/
 }
 
 #project-box-tabs {
@@ -136,7 +135,7 @@
 }
 
 
-@media (min-width: 668px) {
+@media (min-width: 768px) {
     .project-tab {
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
     }
@@ -162,6 +161,12 @@
 @media (min-width: 992px) {
 
     #project-box-tabs {
+        grid-template-columns: auto auto auto ;
+    }
+}
+
+@media (min-width: 1024px) {
+        #project-box-tabs {
         grid-template-columns: auto auto auto auto;
     }
 }

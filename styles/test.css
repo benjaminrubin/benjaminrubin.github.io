@@ -1,0 +1,73 @@
+#branja {
+    background-image: url("../images/thumbnails/branja.jpg");
+
+}
+
+.project-tab {
+    /*background-color: rgba(0, 46, 77, 0.6);*/
+    background: rgba(0, 46, 77, 0.6) url("../images/thumbnails/branja.jpg");
+
+    position: relative;
+    font-size: 1rem;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    /*border-radius: 15px;*/
+    cursor: pointer;
+    transition: all .1s ease !important;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.30);
+    margin-bottom: 27px;
+
+    /*    background-image: url("../images/thumbnails/branja.jpg");
+    background-position: center;*/
+}
+
+.project-tab::before {
+    background-color: rgba(255,255,255,0);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: all .1s ease !important;
+}
+
+
+.screen {
+    /*Overlay*/
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .1s ease !important;
+}
+
+.project-tab:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.30);
+
+}
+
+.project-tab-name {
+	color: rgba(255,255,255,0);
+}
+
+.project-tab:hover .project-tab-name {
+	color: rgba(255,255,255,1);
+}
+
+
+.project-tab:hover::before {
+	background-color: rgba(0, 46, 77, 0.6);	
+}
+
+
+.project-tab:active {
+    transform: translateY(1px);
+
+    box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.30);
+}
