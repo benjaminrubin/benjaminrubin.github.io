@@ -4,8 +4,9 @@ body {
 
 main {
     text-indent: 50px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
+    /*font-family: 'Futura-Light';*/
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
 }
 
 section {
-    font-weight: 300;
+    font-weight: 100;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -95,7 +96,7 @@ p {
 .case-body .subheader {
     text-align: center;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
     margin: 8px 0px;
 }
 
