@@ -184,6 +184,8 @@ footer {
     user-select: none;
 
     width: 85px;
+    height: 22px;
+    line-height: 22px;
 }
 
 
@@ -216,8 +218,9 @@ footer {
 
 
 .icon {
+    display: inline-block;
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 10px;
 }
 
