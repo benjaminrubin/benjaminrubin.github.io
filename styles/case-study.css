@@ -120,7 +120,7 @@ p {
 .tools ul {
     margin-top: 0px;
     margin-bottom: 15px;
-    padding-inline-start: 18px;
+    padding-left: 18px;
 }
 
 .tool-area {
@@ -238,7 +238,7 @@ h4 {
     }
 
     .tools ul {
-        padding-inline-start: 40px;
+        padding-left: 40px;
     }
 }
 
