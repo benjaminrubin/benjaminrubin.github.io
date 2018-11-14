@@ -11,19 +11,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
     <script src="../scripts/case-study.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90328546-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90328546-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-90328546-2');
-</script>
-
-
+    gtag('config', 'UA-90328546-2');
+    </script>
     <title>BFR - Shalom Ethiopia</title>
 </head>
 
@@ -34,8 +31,21 @@
             <h1>Shalom Ethiopia Tours</h1>
             <div class="subheader">Website design and development for an Ethiopian Tour Operator<br />June 2018 - Present</div>
             <h2>Preface</h2>
-            <main class="side-border">In June 2018, my mother and aunt treated me to a special three week trip in Ethiopia as a gift for graduating college. Needless to say, the trip was surreal and humbling. Our private guide, Andy, and his driver took us all across the country and organized many intimate encounters with the native people. Andy and I bonded, and in the last week of the trip I asked him about his work. "So tell me... How do you source clients? Do you have a website or any digital presence?"<br><br>
-                At the time, he was working in conjunction with other agencies and sharing the profits while getting referrals mostly from past clients. He shared with me his dream to open up his own business one day and call it Shalom Ethiopia Tours, hoping to provide a better life for himself and his family. "How long would it take you to set everything up?" He spoke of two years, perhaps more. By the end of our trip, the country and its people left such a strong impression on me that I couldn't leave without giving something back. I decided to help him. "Let's stay in touch. I will build your digital presence". </main>
+            <main class="side-border">
+                <p>In June 2018, my mother and aunt treated me to a special three week trip in Ethiopia as a gift for graduating college. Needless to say, the trip was surreal and humbling. Our private guide, Andy, and his driver took us all across the country and organized many intimate encounters with the native people. Andy and I bonded, and in the last week of the trip I asked him about his work. "So tell me... How do you source clients? Do you have a website or any digital presence?"</p>
+                <p>
+                    At the time, he was working in conjunction with other agencies and sharing the profits while getting referrals mostly from past clients. He shared with me his dream to open up his own business one day and call it Shalom Ethiopia Tours, hoping to provide a better life for himself and his family. "How long would it take you to set everything up?" He spoke of two years, perhaps more. By the end of our trip, the country and its people left such a strong impression on me that I couldn't leave without giving something back. I decided to help him. "Let's stay in touch. I will build your digital presence".</p>
+            </main>
+            <section>
+                <h2>Deliverables</h2>
+                <ul>
+                    <li>Responsive, mobile-first website educating on the business' services and the Ethiopian country</li>
+                    <li>Integrated "Booking Request" form allowing clients to request a booking. Each form submission is recorded in a Google spreadsheet, and with each submission a notification email with all the submitted details is sent to Andy for easy access</li>
+                    <li>Initial set up and population of Instagram account</li>
+                    <li>Setting up Google Business listing for increased exposure</li>
+                    <li>Logo to be used online and offline</li>
+                </ul>
+            </section>
             <div class="tools">
                 <div class="tools-header">Technical Tools Used</div>
                 <div class="languages">
@@ -111,7 +121,7 @@
                 </p>
                 <div class="standalone-image-container">
                     <div class="standalone-image-header">Preliminary Informational Architecture</div>
-                <img class="standalone-image" src="../images/shalomethiopia/informational-architecture.png" alt="Informational Architecture">
+                    <img class="standalone-image" src="../images/shalomethiopia/informational-architecture.png" alt="Informational Architecture">
                 </div>
                     <h3>Wireframing & User Interface Design</h3>
                     <p>
@@ -136,7 +146,7 @@
                                 </div>
                                     </div>
                                     <h3>Design Decisions</h3>
-                                    Every aspect of the website's design was intentional. Below are some highlights of the design decisions I made:
+                                    <p>Every aspect of the website's design was intentional. Below are some highlights of the design decisions I made:</p>
                                     <ul id="design-decisions">
                                         <li>
                                             <h4>Color scheme</h4>
@@ -155,10 +165,38 @@
             </section>
             <section>
                 <h2>Development Phase</h2>
+                <p>Given Andy's low budget and Ethiopia's restriction on making international financial transactions, setting up a website on Wix or Wordpress with all the (paid) features he needed was not an option. This means I would have to build the website from scratch. Challenge accepted.</p>
+                <h3>Static Website using GitHub Pages</h3>
+                <p>GitHub allows users to create static lightweight websites (no backend processing) without paying for hosting. That means you can set up a landing page/basic website for free, while only paying for the domain (which I took care of for Andy for the time being). The only obstacle would be processing information submitted through the "Booking Request" form, where clients can request to book a tour with Shalom Ethiopia.</p>
+                <h3>Form Processing</h3>
+                <p> Processing the form, capturing the data and getting it to Andy in an easy and accessible way required some creative workarounds:
+                </p>
+                <ul id="design-decisions">
+                    <li>
+                        <h4>Aggregation of Submissions</h4>
+                        <p>I used Google Forms and Google Spreadsheets that aggregated all the form submissions. </p>
+                    </li>
+                    <li>
+                        <h4>Form Design and Validation</h4>
+                        <p>To ensure the form's design blended with the website's design and incorporate my own form validation using JavaScript, I used the process described in <a href="https://github.com/toperkin/staticFormEmails/blob/master/README.md">this link</a>.</p>
+                    </li>
+                    <li>
+                        <h4>Email Notifications</h4>
+                        <p>To make things easy for Andy, I set up a Google Script that notifies him immediately via email every time the form is submitted. The email includes all the data that was submitted, giving Andy easy access the information he needs to follow up with a potential lead.
+                        </p>
+                    </li>
+                </ul>
+                <h3>Search Engine Optimization</h3>
+                <p> To maximize the website's ranking, I avoided using Bootstrap or any other HTML/CSS frameworks so the website's code would be unique (search engines don't like websites that are too similar to each other). SEO is baked into the code, with tags delineating important information on each page so search engines can easily crawl the website's content. </p>
+                <p>
+                    All images are in PNG format, interlaced and optimized for web on all screen sizes. The fast load time that arise from this not only improves the website's rankings on search pages, but also improves the user experience.
+                </p>
             </section>
             <section>
                 <h2>Outcome</h2>
-                <p>You can take a look at the final product here: <a href="https://shalomethiopia.com/" target="_blank">Shalom Ethiopia Tours Website</a></p>
+                <p>
+                   As of November 2018, the website is up and running and has launched successfully. You may <a href="https://shalomethiopia.com/" target="_blank"> click here</a> to see the final outcome!
+                </p>
             </section>
         </div>
     </div>
