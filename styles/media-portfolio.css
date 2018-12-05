@@ -18,51 +18,54 @@ hr {
 }
 
 video {
-	margin-right: 30px;
+    margin-right: 30px;
+    width: 300px;
+    height: 170px;
+    margin-bottom: 20px;
 }
 
 #name {
     font-family: Raleway-Medium;
-    font-size: 60px;
+    font-size: 32px;
     color: #333333;
     position: relative;
     left: -3px;
 }
 
 .subheader {
-    font-family: Raleway-Light;
-    font-size: 30px;
+    font-family: Raleway-Medium;
+    font-size: 20px;
     color: #4d4d4d;
     margin: 10px 0px;
 }
 
 
 #social-links {
-	margin: 20px 0px;
-	position: relative;
-	left: 2px;
+    margin: 20px 0px;
+    position: relative;
+    left: 2px;
 }
 
 .social-icon {
-	fill: #a6a6a6;
-	margin-right: 20px;
+    fill: #a6a6a6;
+    margin-right: 20px;
 }
 
 .social-icon:hover {
-	fill: #333333;
+    fill: #333333;
 }
 
 
 .title {
     font-family: Raleway-Medium;
-    font-size: 30px;
+    font-size: 24px;
     color: #333333;
     margin-bottom: 10px
 }
 
 .subtitle {
     font-family: Raleway-Light;
-    font-size: 20px;
+    font-size: 18px;
     color: #4A4A4A;
     margin-bottom: 20px;
 }
@@ -108,7 +111,7 @@ video {
 }
 
 .selected {
- border: 1px solid #333;
+    border: 1px solid #333;
 }
 
 
@@ -117,7 +120,7 @@ video {
 }
 
 .track {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -126,4 +129,31 @@ footer {
     width: 100%;
     text-align: center;
     /*margin-bottom: 30px;*/
+}
+
+
+@media (min-width: 500px) {
+    #name {
+        font-size: 60px;
+    }
+
+    .subheader {
+        font-size: 30px;
+        font-family: Raleway-Light;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+
+    video {
+        margin-right: 30px;
+        width: 400px;
+        height: 240px;
+    }
 }
