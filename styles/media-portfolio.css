@@ -1,0 +1,121 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    padding: 40px;
+    padding-top: 30px;
+
+}
+
+hr {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+video {
+	margin-left: 30px;
+}
+
+#name {
+    font-family: Raleway-Medium;
+    font-size: 60px;
+    color: #333333;
+    position: relative;
+    left: -3px;
+}
+
+.subheader {
+    font-family: Raleway-Light;
+    font-size: 30px;
+    color: #4d4d4d;
+    margin: 10px 0px;
+}
+
+
+#social-links {
+	margin: 20px 0px;
+	position: relative;
+	left: 2px;
+}
+
+.social-icon {
+	fill: #a6a6a6;
+	margin-right: 20px;
+}
+
+.social-icon:hover {
+	fill: #333333;
+}
+
+
+.title {
+    font-family: Raleway-Medium;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 10px
+}
+
+.subtitle {
+    font-family: Raleway-Light;
+    font-size: 20px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.current-image-holder {
+    margin: auto auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.current-image {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: auto auto;
+    border: 1px solid #d9d9d9;
+}
+
+.thumbnails-container {
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d9d9d9;
+    transition: .12s;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+.selected {
+ border: 1px solid #333;
+}
+
+
+.thumbnail>img {
+    /*width: 100%;*/
+}
+
+.track {
+	margin-bottom: 20px;
+}
