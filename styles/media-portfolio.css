@@ -17,7 +17,7 @@ hr {
     margin: 30px 0px;
 }
 
-video {
+.video {
     margin-right: 30px;
     width: 300px;
     height: 170px;
@@ -151,7 +151,7 @@ footer {
     }
 
 
-    video {
+    .video {
         margin-right: 30px;
         width: 400px;
         height: 240px;
