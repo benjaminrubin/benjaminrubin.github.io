@@ -4,12 +4,15 @@ video {
 	margin: auto auto;
 	display: block;
 	position: relative;
-	margin: 30px 10px;
+}
+
+iframe {
+	margin: 20px 5px;
 }
 
 .video-box {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
 	justify-items: center;
 }
 
@@ -27,6 +30,12 @@ video {
 img {
 	width: 100%;
 	display: inline-block;
+}
+
+@media (min-width: 580px) {
+	.video-box {
+		grid-template-columns: auto auto;
+	}
 }
 
 
