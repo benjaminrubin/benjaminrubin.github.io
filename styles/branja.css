@@ -24,12 +24,16 @@ iframe {
 }
 
 .mockup {
-	max-width: 740px;
+	max-width: 860px;
 }
 
 img {
 	width: 100%;
 	display: inline-block;
+}
+
+.case-body {
+	max-width: 1500px;
 }
 
 @media (min-width: 580px) {
