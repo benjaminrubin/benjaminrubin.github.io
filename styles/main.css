@@ -26,6 +26,13 @@
         url('https://raw.githubusercontent.com/benjaminrubin/benjaminrubin.github.io/master/fonts/futura/futura_light_bt-webfont.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'Open Sans;
+    src:
+    url('<https://fonts.googleapis.com/css?family=Open+Sans');
+
+}
+
 
 .material-icons {
     font-family: 'Material Icons';
@@ -56,7 +63,8 @@
 body {
     margin: 0;
     height: 100%;
-    font-family: 'Futura', 'Roboto', 'Source Sans Pro', sans-serif;
+    /*font-family: 'Futura', 'Roboto', 'Source Sans Pro', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
     color: #333333;
 
     padding-bottom: 50px !important;
@@ -236,7 +244,7 @@ footer {
     }
 
     #profile-container {
-        width: 540px;
+        width: 550px;
         max-height: 400px;
         /*grid-template-columns: 200px 340px;*/
         grid-template-columns: auto auto;
