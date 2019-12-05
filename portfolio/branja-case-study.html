@@ -15,102 +15,114 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90328546-2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-90328546-2');
+        gtag('config', 'UA-90328546-2');
     </script>
     <title>BFR - Branja</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="home-link"><a href="../index.html?section=work" ><i class="material-icons back-arrow">chevron_left</i>Home</a></div>
-        <div class="case-body">
-            <h1>Branja</h1>
-            <div class="subheader">Map Oriented Social Event Platform for iOS<br />January 2018 - December 2018</div>
-            <h2>Preface</h2>
-            <main class="side-border">
-                <p>Branja is a map-oriented event platform, allowing users to search for and be invited to events based on their interests and social circles ("Branja" originates from the word tree branch, and means a large group of close friends). </p>
-                <p>
-                    This project initially started as a final assignment for a Full Stack Web Development class I took at the University of Southern California. A lot of positive feedback from friends and family drove me to take it one step further - after graduating from USC I signed up as an external stakeholder for a Computer Science capstone class and managed a team of students to develop the iOS version of Branja. For this version of Branja, I took on the role of <span style="text-decoration: underline;">Product Manager</span> and <span style="text-decoration: underline;">Product Designer</span>.</p>
-            </main>
-            <section>
-                <h2>Development</h2>
-                <p>
-                    My objective was to have a beta version of the iOS app ready for user testing by the end of the students' fall semester. I defined the core functionalities of the app within five main categories, and put together a product backlog for the students to follow as they submitted their deliverables every two weeks (in typical Agile fashion).
-                    <h3>Core Functionalities</h3>
-                    <ul>
-                        <li>Onboarding
+    <div id="page-container">
+        <div id="content-wrapper">
+            <div class="container">
+                <div class="home-link"><a href="../index.html?section=work"><i class="material-icons back-arrow">chevron_left</i>Home</a></div>
+                <div class="case-body">
+                    <h1>Branja</h1>
+                    <div class="subheader">Map Oriented Social Event Platform for iOS<br />January 2018 - December 2018</div>
+                    <h2>Preface</h2>
+                    <main class="side-border">
+                        <p>Branja is a map-oriented event platform, allowing users to search for and be invited to events based on their interests and social circles ("Branja" originates from the word tree branch, and means a large group of close friends).
+                            </p>
+                        <p>
+                            This project initially started as a final assignment for a Full Stack Web Development class I took at the University of Southern California. A lot of positive feedback from friends and family drove me to take it one step further - after graduating from
+                            USC I signed up as an external stakeholder for a Computer Science capstone class and managed a team of students to develop the iOS version of Branja. For this version of Branja, I took on the role of
+                            <span style="text-decoration: underline;">Product Manager</span> and <span style="text-decoration: underline;">Product Designer</span>.</p>
+                    </main>
+                    <section>
+                        <h2>Development</h2>
+                        <p>
+                            My objective was to have a beta version of the iOS app ready for user testing by the end of the students' fall semester. I defined the core functionalities of the app within five main categories, and put together a product backlog for the students to
+                            follow as they submitted their deliverables every two weeks (in typical Agile fashion).
+                            <h3>Core Functionalities</h3>
                             <ul>
-                                <li>Signing up and logging into the app</li>
+                                <li>Onboarding
+                                    <ul>
+                                        <li>Signing up and logging into the app</li>
+                                    </ul>
+                                </li>
+                                <li>User Profiles
+                                    <ul>
+                                        <li>Updating and editing the user's profile</li>
+                                        <li>Viewing another user's profile</li>
+                                    </ul>
+                                </li>
+                                <li>Events
+                                    <ul>
+                                        <li>Creating and editing events</li>
+                                        <li>Events from attendee's perspective</li>
+                                        <li>Events from host's perspective</li>
+                                    </ul>
+                                </li>
+                                <li>Search and Discovery
+                                    <ul>
+                                        <li>Searching for events and users</li>
+                                        <li>Map containing all the pinned events</li>
+                                        <li>Event directory with pinned events</li>
+                                    </ul>
+                                </li>
+                                <li>Notifications
+                                    <ul>
+                                        <li>Friendship requests and acceptances</li>
+                                        <li>Invitations to events</li>
+                                        <li>Updates to events</li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                        <li>User Profiles
-                            <ul>
-                                <li>Updating and editing the user's profile</li>
-                                <li>Viewing another user's profile</li>
-                            </ul>
-                        </li>
-                        <li>Events
-                            <ul>
-                                <li>Creating and editing events</li>
-                                <li>Events from attendee's perspective</li>
-                                <li>Events from host's perspective</li>
-                            </ul>
-                        </li>
-                        <li>Search and Discovery
-                            <ul>
-                                <li>Searching for events and users</li>
-                                <li>Map containing all the pinned events</li>
-                                <li>Event directory with pinned events</li>
-                            </ul>
-                        </li>
-                        <li>Notifications
-                            <ul>
-                                <li>Friendship requests and acceptances</li>
-                                <li>Invitations to events</li>
-                                <li>Updates to events</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </p>
-            </section>
-            <section>
-                <h2>Prototype</h2>
-                <p>
-                    To speed up the development process, I designed a prototype using Sketch and InVision for the team's reference. I researched and analyzed several user flows of popular iOS apps (including Airbnb, Facebook, and Yelp), and adhered to contemporary UI/UX principles as I constructed the app's simple yet intuitive design. You may see some familiar design patterns found in other popular apps - this approach was intentional and in line with <a href="https://lawsofux.com/jakobs-law.html" target="_blank">Jakob's (UX) Law</a>.
-                </p>
-                <br />
-                <h2 style="text-align: center;">Videos of Prototype</h2>
-                <div class="video-box">
-                    <iframe src="https://player.vimeo.com/video/306295123" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    <iframe src="https://player.vimeo.com/video/306473063" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    <iframe src="https://player.vimeo.com/video/306473009" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    <iframe src="https://player.vimeo.com/video/306473032" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                <br/>
-                <h2 style="text-align: center;">Screenshots</h2>
-                <div class="mockup-box">
-                    <div class="mockup">
-                        <img src="../images/branja/mockup_1.png" alt="Branja Mockup">
-                    </div>
-                        <div class="mockup">
-                            <img src="../images/branja/mockup_2.png" alt="Branja Mockup">
-                    </div>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Prototype</h2>
+                        <p>
+                            To speed up the development process, I designed a prototype using Sketch and InVision for the team's reference. I researched and analyzed several user flows of popular iOS apps (including Airbnb, Facebook, and Yelp), and adhered to contemporary UI/UX
+                            principles as I constructed the app's simple yet intuitive design. You may see some familiar design patterns found in other popular apps - this approach was intentional and in line with <a href="https://lawsofux.com/jakobs-law.html"
+                                target="_blank">Jakob's (UX) Law</a>.
+                        </p>
+                        <br />
+                        <h2 style="text-align: center;">Videos of Prototype</h2>
+                        <div class="video-box">
+                            <iframe src="https://player.vimeo.com/video/306295123" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/306473063" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/306473009" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/306473032" width="280" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <br/>
+                        <h2 style="text-align: center;">Screenshots</h2>
+                        <div class="mockup-box">
+                            <div class="mockup">
+                                <img src="../images/branja/mockup_1.png" alt="Branja Mockup">
+                            </div>
+                            <div class="mockup">
+                                <img src="../images/branja/mockup_2.png" alt="Branja Mockup">
+                            </div>
                             <div class="mockup">
                                 <img src="../images/branja/mockup_3.png" alt="Branja Mockup">
-                    </div>
-                                <div class="mockup">
-                                    <img src="../images/branja/mockup_4.png" alt="Branja Mockup">
-                    </div>
-                                </div>
-            </section>
+                            </div>
+                            <div class="mockup">
+                                <img src="../images/branja/mockup_4.png" alt="Branja Mockup">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
+        <footer>© 2018 Work of Benjamin Floyd Rubin</footer>
     </div>
-    <footer>© 2018 Work of Benjamin Floyd Rubin</footer>
 </body>
 
 </html>
