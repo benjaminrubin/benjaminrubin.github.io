@@ -1,221 +1,123 @@
-<!DOCTYPE html>
-<html>
-<!-- Website designed by Benjamin Floyd Rubin. Not Squarespace, Wix or anything else ;) -->
+<!doctype html>
+<html lang="en">
 
 <head>
-    <!-- REQUIRED REFERENCES -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" href="fonts/webfontkit-20181029-001221/stylesheet.css"> -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/about.css">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/project-tabs.css"> -->
-    <link rel="stylesheet" type="text/css" href="styles/project-tabs.css">
-    <link rel="stylesheet" type="text/css" href="styles/social-icons.css">
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
-    <script src="scripts/main.js" async></script>
-    <!-- <script src="scripts/prefixfree.min.js"></script> -->
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90328546-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous">
 
-        gtag('config', 'UA-90328546-2');
-    </script>
-    <!-- END OF REQUIRED REFERENCES -->
-    <title>Benjamin Floyd Rubin</title>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+                rel="stylesheet">
+
+
+        <title>Benjamin Floyd Rubin</title>
+
+        <style>
+                body {
+                        font-family: 'Source Sans Pro', sans-serif;
+                }
+
+                .bg-light {
+                        background-color: #e9ecef !important;
+                }
+
+                a {
+                        color: inherit;
+                }
+
+                .font-weight-200 {
+                        font-weight: 200;
+                }
+
+                .font-weight-300 {
+                        font-weight: 300;
+                }
+
+                .font-weight-400 {
+                        font-weight: 400;
+                }
+
+                .font-weight-600 {
+                        font-weight: 600;
+                }
+
+                .font-weight-700 {
+                        font-weight: 700;
+                }
+
+                .font-weight-bold {
+                        font-weight: 600 !important;
+                }
+
+
+        </style>
 </head>
 
-<body>
+<body class="bg-light">
+        <div class="container col-sm-12 col-md-8 col-lg-6 col-xl-6">
+                <div class="jumbotron">
+                        <div class="img-container col-8 col-sm-7 col-md-8 col-lg-8 mx-auto mb-4"><img src="./images/thumbnails/new_profilepic.png" alt="Benjamin Rubin" class="img-fluid rounded-circle"></div>
 
-    <div id="page-container">
-
-        <div id="content-wrapper">
-
-            <div class="container">
-                <div id="profile-container">
-                    <div id="profile-picture">
-                    </div>
-                    <div id="profile-info">
-                        <h1>Benjamin Floyd Rubin</h1>
-                        <div id="tagline">Design, Tech & Business </div>
-                        <div id="location">
-                            <!-- SVG FOR PIN -->
-                            <svg id="pin" width="25" height="42" viewBox="0 10 167 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <radialGradient cx="50%" cy="12.4725556%" fx="50%" fy="12.4725556%" r="114.31542%" gradientTransform="translate(0.500000,0.124726),scale(1.000000,0.274218),rotate(90.000000),translate(-0.500000,-0.124726)" id="radialGradient-1">
-                                <stop stop-color="#5C4E4E" offset="0%"></stop>
-                                <stop stop-color="#BEBEBE" offset="100%"></stop>
-                            </radialGradient>
-                        </defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path d="M71,128.000001 L86.5351106,128 C90.9533886,128 94.5351106,131.581722 94.5351106,136 C94.5351106,136 94.5351106,136.000001 94.5351106,136.000001 L94.5350924,233.787863 C94.5350918,236.874415 92.7594797,239.685642 89.9723478,241.0118 C87.1866709,242.337267 83.4517367,243 78.7675452,243 C74.0833613,243 70.3484317,242.337269 67.5627562,241.011807 L67.5627542,241.011811 C64.7756167,239.685653 63.0000004,236.874422 63.0000004,233.787866 L63,136.000001 C63,131.581723 66.581722,128.000001 71,128.000001 Z" id="Rectangle" fill="url(#radialGradient-1)"></path>
-                            <circle id="Oval" fill="#BD2103" cx="79" cy="79" r="79"></circle>
-                            <path d="M82.8376651,12.2163876 C92.2320378,10.6079753 119.763334,17.7261573 127.093737,41.6488975 C134.42414,65.5716377 98.6345721,71.6965294 81.4478564,58.700781 C64.2611407,45.7050326 54.6737003,17.0383454 82.8376651,12.2163876 Z" id="Path-4" fill="#FFFFFF"></path>
-                        </g>
-                    </svg>
-                            <!-- END OF SVG FOR PIN -->
-                            Los Angeles, California
-                        </div>
-                        <!-- Website currently under construction! -->
-                        <div id="profile-buttons">
-                            <div class="btn profile-btn off" id="about-btn"><i class="material-icons icon">account_circle</i>About Me</div>
-                            <div class="btn profile-btn on" id="work-btn"><i class="material-icons icon">apps</i>Portfolio</div>
-                        </div>
-                        <!-- end of profile buttons -->
-                    </div>
-                    <!-- end of profile info -->
-                </div>
-                <!-- end of profile container -->
-                <div id="about">
-                    <h2>Thanks for stopping by!</h2>
-
-                    <p>
-                        I am a web application developer, graphic designer and music producer based in Los Angeles, California. 
-                    </p>
-                    <p>
-                        <a href="mailto:ben@branja.co">ben@branja.co</a>
-                    </p>
-
-
-                    <!-- <p>I am an Israeli American living in Los Angeles with a major passion for the world of technology. I enjoy studying and practicing virality, digital marketing, human computer interaction, and content creation to better assist my clients as part of my agency <a href="https://www.branja.co" target="_blank">Branja</a> and apply what I learn sometimes to my own projects.   -->
-                         <!-- In my free time, I produce electronic dance music under the name "Benja" <a href="https://www.benjaofficial.com/" target="_blank">(link to the official website)</a>. -->
-                        <br/><br/>
-                        <!-- For anything at all, you can reach me at <a href="mailto:bennyfrubin@gmail.com" target="_blank">bennyfrubin@gmail.com</a> -->
-                        <br/><br/>
-                        <!-- Cheers, -->
+                        <h1 class="display-4 font-weight-700 text-center">Benjamin Floyd Rubin</h1>
+                        <hr class="my-4">
+                        <p class="text-center"><span class="font-weight-700"> ABOUT ME</span>
+                                <p>
+                                        I work and breathe the world of technology. From design, development to business strategy - I deeply enjoy working on all aspects of digital businesses.
+                                        I owe my success to my never-ending curiosity for understanding how things work.
+                                </p>
+                                <p>
+                                        Some other tidbits about me:
+                        <ul>
+                                <li>US born, Israeli raised (Israeli Air Force veteran!)</li>
+                                <!-- <li></li> -->
+                                <li> USC Alumni: I was a member of the first <a href="https://www.marshall.usc.edu/programs/undergraduate-programs/academics/world-bachelor-business" class="font-weight-600"><u> World
+                                                Bachelor in Business Cohort</u></a>, where 45 students study across the
+                                        world together and receive 3 international business degrees. I remained a 5th year
+                                        to study computer science at the <span class="font-weight-600">USC Viterbi School of Engineering</span></li>
+                                <li>I produce electronic dance music under the sobriquet <a
+                                                href="https://benjaofficial.com" target="_blank"> <u class="font-weight-600">Benja</u></a></li>
+                        </ul>
+                        </p>
                         <br/>
-                        <!-- Benjamin -->
-                    </p>
-                    
-                    
-                    
-                    <div id="social">
-                        <!--  <svg class="socialIcon" id="instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-            </svg> -->
-                        <!--         <svg class="socialIcon" id="dribbble" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-6.953.666-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z" />
-            </svg> -->
-                        <a href="https://www.linkedin.com/in/benjaminfloydrubin/"><svg class="social-icon" id="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                </svg></a>
-                        <a href="https://github.com/benjaminrubin"><svg class="social-icon" id="github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg></a>
-                    </div>
+                        <p class="text-center"><span class="font-weight-700"> SOME COMPANIES I'VE WORKED WITH</span>
+                        <ul>
+                                <li> <span class="font-weight-bold">IBM</span>, New York New York - Marketing and Data Analytics</li>
+                                <li> <span class="font-weight-bold"> Mountain Partners Venture Capital and Private Equity</span>, Bangkok Thailand - Strategy and Project Management</li>
+                                <li>  <span class="font-weight-bold">Infosys</span>, Indianapolis / Los Angeles - Software Engineer</li>
+                                <li>  <span class="font-weight-bold">Order For Me</span>, Santa Monica California - Head of Product</li>
+                        </ul>
+                        </p>
+                        <hr class="my-4">
+
+                        <p class="text-center">
+                                <span class="font-weight-600">Contact: <a href="mailto:ben@branja.net"><u>ben@branja.net</u></a></span>
+                        </p>
+
+                        <div class="text-center no-blue">
+                                <a href="https://www.linkedin.com/in/benjaminfloydrubin" target="_blank"><u class="font-weight-600">LinkedIn</u></a></a> |
+                                <a href="https://github.com/benjaminrubin" target="_blank"><u class="font-weight-600">Github</u></a></a>
+                        </div>
                 </div>
-                <!-- end of about section -->
-                <!-- beginning of project box -->
-                <div id="project-box" style="display: block;">
-                    <!-- <div class="instructions">Click on a thumbnail to learn more</div> -->
-                    
-                    <div id="project-box-tabs">
-                        
-                        <div class="project-name ">Rubin Realty Co.</div>
-                        <a href="https://rubinrealtyco.com" target="_blank">
-                         <div class="project-tab ">
-                            <img src="images/thumbnails/rubinrealty.jpg" alt="Rubin Realty Thumbnail " class="project-tab-thumbnail " style="object-fit: cover; ">
-                            
-                            <div class="project-tab-screen ">
-                                <div class="project-tab-name ">Rubin Realty Co.</div>
-                            </div>
-                        </div> 
-                        </a>
-
-                        <div class="project-name ">Marisa Collins Portfolio</div>
-                        <a href="https://marisacollins.com" target="_blank">
-                         <div class="project-tab ">
-                            <img src="images/thumbnails/marisa.png" alt="Marisa Collins Thumbnail " class="project-tab-thumbnail " style="object-fit: cover; ">
-                            
-                            <div class="project-tab-screen ">
-                                <div class="project-tab-name ">Marisa Collins Portfolio</div>
-                            </div>
-                        </div> 
-                        </a>
-
-                        <div class="project-name ">Anthony Gasparro Portfolio</div>
-                        <a href="https://anthonygasparro.com" target="_blank">
-                         <div class="project-tab ">
-                            <img src="images/thumbnails/anthony.png" alt="Anthony Gasparro Thumbnail " class="project-tab-thumbnail " style="object-fit: cover; ">
-                            
-                            <div class="project-tab-screen ">
-                                <div class="project-tab-name ">Anthony Gasparro Portfolio</div>
-                            </div>
-                        </div> 
-                        </a>
-
-
-                        <div class="project-name">Branja - iOS App</div>
-                        <a href="portfolio/branja-case-study">
-                            <div class="project-tab">
-                                <img src="images/thumbnails/branja.jpg" alt="branja" class="project-tab-thumbnail">
-                                <div class="project-tab-screen">
-                                    <div class="project-tab-name">Branja iOS App</div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="project-name">Shalom Ethiopia Tours</div>
-                        <a href="portfolio/shalom-ethiopia-case-study">
-                            <div class="project-tab">
-                                <img src="images/thumbnails/shalom_ethiopia.png" alt="shalom ethiopia" class="project-tab-thumbnail" ">
-                    
-                    <div class="project-tab-screen ">
-
-                        <div class="project-tab-name ">Shalom Ethiopia Tours</div>
-                    </div>
-                </div>
-                </a>
-
-                <div class="project-name ">Graphic Design Gallery</div>
-                <a href="portfolio/graphic-design-gallery ">
-                 <div class="project-tab ">
-                    <img src="images/thumbnails/theface.jpg " alt=" " class="project-tab-thumbnail " style="object-fit: cover; ">
-                    
-                    <div class="project-tab-screen ">
-                        <div class="project-tab-name ">Graphic Design Gallery</div>
-                    </div>
-                </div> 
-                </a>
-
-
-
-                <div class="project-name ">Projects from USC</div>
-                <a href="https://303.itpwebdev.com/~benjamfr/student_page.html " target="_blank ">
-                <div class="project-tab ">
-                    <img src="images/thumbnails/viterbi2.png " alt="usc fullstack course " class="project-tab-thumbnail ">
-                    <div class="project-tab-screen ">
-                    <div class="project-tab-name ">Projects from USC</div> 
-                    </div>
-                </div>
-                </a>
-                <!--  <div class="project-name ">Projects from freeCodeCamp</div>
-                <a href="# ">
-                <div class="project-tab " >
-                    <img src="images/thumbnails/freeCodeCamp.png " alt="freeCodeCamp " class="project-tab-thumbnail ">
-                    <div class="project-tab-screen ">
-                        <div class="project-tab-name ">Projects from freeCodeCamp</div>
-                    </div>
-                </div>
-                </a> 
-                </a> -->
-            </div>
         </div>
-            <footer>© 2019 Work of Benjamin Floyd Rubin</footer>
-        </div>
-        <!-- end of project box -->
-        <!-- beginning of social section -->
-        <!-- end of social section -->
-        <!-- <div class="btn " id="resume-btn "><i class="material-icons icon "">description</i>Resume</div>
-                    </div> -->
-                </div>
-                <!-- end of general container -->
-            </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
